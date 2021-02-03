@@ -33,6 +33,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Forms\AdministratorMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdministratorMenuForm.Designer.cs">
+      <DependentUpon>AdministratorMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CharityOrganisationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CharityOrganisationsForm.Designer.cs">
+      <DependentUpon>CharityOrganisationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CoordinatorMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CoordinatorMenuForm.Designer.cs">
+      <DependentUpon>CoordinatorMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DetailedInformationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -47,6 +71,18 @@
     </Compile>
     <Compile Include="Controls\PlaceholderTextBox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterAsARunnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterAsARunnerForm.Designer.cs">
+      <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RunnerMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RunnerMenuForm.Designer.cs">
+      <DependentUpon>RunnerMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SponsorConfirmForm.cs">
       <SubType>Form</SubType>
@@ -65,11 +101,29 @@
     <Compile Include="Forms\SponsorForm.Designer.cs">
       <DependentUpon>SponsorForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AdministratorMenuForm.resx">
+      <DependentUpon>AdministratorMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CharityOrganisationsForm.resx">
+      <DependentUpon>CharityOrganisationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CoordinatorMenuForm.resx">
+      <DependentUpon>CoordinatorMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DetailedInformationForm.resx">
       <DependentUpon>DetailedInformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterAsARunnerForm.resx">
+      <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RunnerMenuForm.resx">
+      <DependentUpon>RunnerMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SponsorConfirmForm.resx">
       <DependentUpon>SponsorConfirmForm.cs</DependentUpon>

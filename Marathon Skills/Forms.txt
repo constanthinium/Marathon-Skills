@@ -2,3 +2,7 @@
 SponsorForm - 1.7
 SponsorConfirmForm - 1.8
 DetailedInformationForm - 1.9
+CharityOrganisationsForm - 1.10
+AuthorizationForm - 1.11
+RunnerMenuForm - 1.12
+CoordinatorMenuForm - 1.13

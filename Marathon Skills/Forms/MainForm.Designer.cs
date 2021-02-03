@@ -103,7 +103,7 @@ namespace Marathon_Skills.Forms
             // 
             this.roundedButton1.AutoSize = true;
             this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.Font = new System.Drawing.Font("Arial", 12.25F);
             this.roundedButton1.Location = new System.Drawing.Point(687, 351);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Padding = new System.Windows.Forms.Padding(16, 4, 16, 4);
@@ -116,7 +116,7 @@ namespace Marathon_Skills.Forms
             // 
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 12.75F);
             this.button1.Location = new System.Drawing.Point(215, 156);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(16);
@@ -129,7 +129,7 @@ namespace Marathon_Skills.Forms
             // 
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.button2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial", 12.75F);
             this.button2.Location = new System.Drawing.Point(215, 234);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(16);
@@ -142,7 +142,7 @@ namespace Marathon_Skills.Forms
             // 
             this.button3.AutoSize = true;
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.button3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Arial", 12.75F);
             this.button3.Location = new System.Drawing.Point(215, 312);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(16);
