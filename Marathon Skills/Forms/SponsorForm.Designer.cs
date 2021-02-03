@@ -68,6 +68,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.label1.Location = new System.Drawing.Point(297, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 27);
@@ -77,10 +78,10 @@ namespace Marathon_Skills.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(129, 80);
+            this.label2.Font = new System.Drawing.Font("Arial", 12.25F);
+            this.label2.Location = new System.Drawing.Point(103, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(542, 51);
+            this.label2.Size = new System.Drawing.Size(616, 57);
             this.label2.TabIndex = 1;
             this.label2.Text = "Пожалуйста, выберите бегуна, которого вы хотели бы спонсировать, и сумму,\r\nкотоую" +
     " вы хотели бы спонсировать. Спасибо за вашу поддержку бегунов и их\r\nблаготворите" +
@@ -91,7 +92,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.label3.Location = new System.Drawing.Point(79, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 22);
@@ -241,7 +242,7 @@ namespace Marathon_Skills.Forms
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.roundedButton5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -263,16 +264,18 @@ namespace Marathon_Skills.Forms
             // 
             // roundedButton5
             // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roundedButton5.Location = new System.Drawing.Point(12, 12);
             this.roundedButton5.Name = "roundedButton5";
             this.roundedButton5.Size = new System.Drawing.Size(75, 23);
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
-            this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedButton5.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 400);
@@ -295,7 +298,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.label11.Location = new System.Drawing.Point(490, 151);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(223, 22);
@@ -317,7 +320,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.label13.Location = new System.Drawing.Point(490, 220);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(226, 22);
@@ -328,7 +331,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.label14.Location = new System.Drawing.Point(568, 245);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(71, 37);
@@ -349,6 +352,7 @@ namespace Marathon_Skills.Forms
             // roundedButton1
             // 
             this.roundedButton1.AutoSize = true;
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roundedButton1.Location = new System.Drawing.Point(511, 288);
             this.roundedButton1.Name = "roundedButton1";
@@ -356,11 +360,12 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 23;
             this.roundedButton1.Text = "-";
             this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // roundedButton2
             // 
             this.roundedButton2.AutoSize = true;
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roundedButton2.Location = new System.Drawing.Point(648, 288);
             this.roundedButton2.Name = "roundedButton2";
@@ -368,35 +373,38 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 24;
             this.roundedButton2.Text = "+";
             this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
             this.roundedButton3.AutoSize = true;
-            this.roundedButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roundedButton3.Location = new System.Drawing.Point(495, 345);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(93, 43);
             this.roundedButton3.TabIndex = 25;
             this.roundedButton3.Text = "Заплатить";
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.Submit);
             // 
             // roundedButton4
             // 
             this.roundedButton4.AutoSize = true;
-            this.roundedButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.roundedButton4.Location = new System.Drawing.Point(626, 345);
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(93, 43);
             this.roundedButton4.TabIndex = 26;
             this.roundedButton4.Text = "Отмена";
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // SponsorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton3);

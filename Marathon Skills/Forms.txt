@@ -1,1 +1,4 @@
 ﻿MainForm - 1.6
+SponsorForm - 1.7
+SponsorConfirmForm - 1.8
+DetailedInformationForm - 1.9
