@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
+    
     public partial class MainForm : Form
     {
         public MainForm()
