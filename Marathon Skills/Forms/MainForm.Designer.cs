@@ -34,12 +34,12 @@ namespace Marathon_Skills.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new RoundedButton();
-            this.button2 = new RoundedButton();
-            this.button3 = new RoundedButton();
-            this.roundedButton1 = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
+            this.button1 = new Marathon_Skills.Controls.RoundedButton();
+            this.button2 = new Marathon_Skills.Controls.RoundedButton();
+            this.button3 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,11 +58,11 @@ namespace Marathon_Skills.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(285, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 60);
+            this.label2.Size = new System.Drawing.Size(244, 48);
             this.label2.TabIndex = 1;
             this.label2.Text = "Москва, Россия\r\nсреда 21 октября 2016";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -70,13 +70,46 @@ namespace Marathon_Skills.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(172, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 50);
+            this.label1.Size = new System.Drawing.Size(471, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "MARATHON SKILLS 2016";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 400);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 50);
+            this.panel2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(160, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(490, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "18 дней 8 часов и 17 минут до старта марафона!";
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.AutoSize = true;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.Location = new System.Drawing.Point(687, 351);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Padding = new System.Windows.Forms.Padding(16, 4, 16, 4);
+            this.roundedButton1.Size = new System.Drawing.Size(101, 43);
+            this.roundedButton1.TabIndex = 3;
+            this.roundedButton1.Text = "Login";
+            this.roundedButton1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -114,39 +147,6 @@ namespace Marathon_Skills.Forms
             this.button3.Text = "Я хочу узнать больше о событии";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // roundedButton1
-            // 
-            this.roundedButton1.AutoSize = true;
-            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.Location = new System.Drawing.Point(687, 351);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Padding = new System.Windows.Forms.Padding(16, 4, 16, 4);
-            this.roundedButton1.Size = new System.Drawing.Size(101, 43);
-            this.roundedButton1.TabIndex = 3;
-            this.roundedButton1.Text = "Login";
-            this.roundedButton1.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 400);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 50);
-            this.panel2.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(160, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(483, 30);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "18 дней 8 часов и 17 минут до старта марафона!";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +158,9 @@ namespace Marathon_Skills.Forms
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
