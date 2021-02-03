@@ -10,7 +10,7 @@ namespace Marathon_Skills.Forms
             InitializeComponent();
 
             var time = new DateTime(2016, 11, 24, 6, 0, 0) - DateTime.Now;
-            label3.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
+            label10.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
         }
 
         private void Submit(object sender, EventArgs e)
