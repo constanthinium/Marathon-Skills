@@ -7,26 +7,32 @@ namespace Marathon_Skills.Controls
     {
         private string _placeholder;
 
+        public new string Text
+        {
+            get => base.Text == _placeholder ? "" : base.Text;
+            set => base.Text = value;
+        }
+
         public string Placeholder
         {
             get => _placeholder;
             set
             {
                 _placeholder = value;
-                Text = value;
+                base.Text = value;
                 ForeColor = Color.Gray;
 
                 GotFocus += (sender, args) =>
                 {
-                    if (Text != _placeholder) return;
-                    Text = "";
+                    if (base.Text != _placeholder) return;
+                    base.Text = "";
                     ForeColor = Color.Black;
                 };
 
                 LostFocus += (sender, args) =>
                 {
-                    if (Text != "") return;
-                    Text = _placeholder;
+                    if (base.Text != "") return;
+                    base.Text = _placeholder;
                     ForeColor = Color.Gray;
                 };
             }
