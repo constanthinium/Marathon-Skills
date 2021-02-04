@@ -11,7 +11,7 @@ namespace Marathon_Skills
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SponsorForm());
+            Application.Run(new MainForm());
         }
     }
 }
