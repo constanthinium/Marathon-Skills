@@ -81,7 +81,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 label14.Text = textBox1.Text + '$';
         }
 
-        private void roundedButton5_Click(object sender, EventArgs e)
+        private void Back(object sender, EventArgs e)
         {
             DispatcherForm.OpenForm<MainForm>();
             Close();
