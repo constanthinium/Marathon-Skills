@@ -91,5 +91,10 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
         {
             Program.MoveToForm<MainForm>(this);
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsDigit(e.KeyChar) || e.KeyChar == '\b');
+        }
     }
 }
