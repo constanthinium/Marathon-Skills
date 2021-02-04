@@ -149,6 +149,8 @@
     <EmbeddedResource Include="Forms\SponsorForm.resx">
       <DependentUpon>SponsorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Images\charity-descriptions.pdf" />
+    <None Include="Images\charity-logos.pptx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -171,6 +173,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms.txt" />
+    <Content Include="Images\arise-logo.png" />
+    <Content Include="Images\aves-do-brazil-logo.png" />
+    <Content Include="Images\clara-santos-oliveira-institute-logo.png" />
+    <Content Include="Images\conquer-cancer-brazil.png" />
+    <Content Include="Images\diabetes-brazil-logo.png" />
+    <Content Include="Images\heart-health-sao-paulo-logo.png" />
+    <Content Include="Images\human-rights-centre-logo.png" />
+    <Content Include="Images\oxfam-international-logo.png" />
+    <Content Include="Images\querstadtein-logo.png" />
+    <Content Include="Images\save-the-children-fund-logo.png" />
+    <Content Include="Images\stay-pumped-logo.png" />
+    <Content Include="Images\the-red-cross-logo.png" />
+    <Content Include="Images\upbeat-logo.png" />
+    <Content Include="Images\wwsm-rescue-logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
