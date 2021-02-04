@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
@@ -14,9 +8,11 @@ namespace Marathon_Skills.Forms
         public SponsorConfirmForm()
         {
             InitializeComponent();
+
+            Program.LoadTime(label10);
         }
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+        private void Back(object sender, EventArgs e)
         {
             Program.MoveToForm<SponsorForm>(this);
         }

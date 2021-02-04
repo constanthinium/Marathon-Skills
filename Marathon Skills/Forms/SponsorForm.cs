@@ -14,8 +14,7 @@ namespace Marathon_Skills.Forms
         {
             InitializeComponent();
 
-            var time = new DateTime(2016, 11, 24, 6, 0, 0) - DateTime.Now;
-            label10.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
+            Program.LoadTime(label10);
 
             var adapter = new SqlDataAdapter(@"
 select concat(FirstName, ', ', LastName, ' - ', BibNumber, ' (', Runner.CountryCode, ')') as Runner

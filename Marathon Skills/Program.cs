@@ -37,5 +37,11 @@ namespace Marathon_Skills
 
             formToClose?.Close();
         }
+
+        public static void LoadTime(Label label)
+        {
+            var time = new DateTime(2016, 11, 24, 6, 0, 0) - DateTime.Now;
+            label.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
+        }
     }
 }
