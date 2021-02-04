@@ -45,11 +45,13 @@ namespace Marathon_Skills.Forms
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,7 +132,7 @@ namespace Marathon_Skills.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(30, 159);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
             this.pictureBox1.TabIndex = 31;
@@ -138,7 +140,7 @@ namespace Marathon_Skills.Forms
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(30, 240);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 81);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 60);
             this.pictureBox2.TabIndex = 32;
@@ -146,7 +148,7 @@ namespace Marathon_Skills.Forms
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(30, 319);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 160);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 60);
             this.pictureBox3.TabIndex = 33;
@@ -156,7 +158,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10.25F);
-            this.label3.Location = new System.Drawing.Point(97, 187);
+            this.label3.Location = new System.Drawing.Point(67, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(670, 32);
             this.label3.TabIndex = 35;
@@ -168,7 +170,7 @@ namespace Marathon_Skills.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label4.Location = new System.Drawing.Point(96, 159);
+            this.label4.Location = new System.Drawing.Point(66, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(426, 22);
             this.label4.TabIndex = 34;
@@ -178,7 +180,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10.25F);
-            this.label5.Location = new System.Drawing.Point(97, 268);
+            this.label5.Location = new System.Drawing.Point(67, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(670, 32);
             this.label5.TabIndex = 37;
@@ -190,7 +192,7 @@ namespace Marathon_Skills.Forms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label6.Location = new System.Drawing.Point(96, 240);
+            this.label6.Location = new System.Drawing.Point(66, 81);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(426, 22);
             this.label6.TabIndex = 36;
@@ -200,7 +202,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 10.25F);
-            this.label7.Location = new System.Drawing.Point(97, 347);
+            this.label7.Location = new System.Drawing.Point(67, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(670, 32);
             this.label7.TabIndex = 39;
@@ -212,11 +214,28 @@ namespace Marathon_Skills.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label8.Location = new System.Drawing.Point(96, 319);
+            this.label8.Location = new System.Drawing.Point(66, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(426, 22);
             this.label8.TabIndex = 38;
             this.label8.Text = "Наименование благотворительной организации";
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(30, 159);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(737, 220);
+            this.panel3.TabIndex = 40;
             // 
             // CharityOrganisationsForm
             // 
@@ -224,19 +243,11 @@ namespace Marathon_Skills.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
@@ -249,6 +260,8 @@ namespace Marathon_Skills.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +285,6 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel3;
     }
 }
