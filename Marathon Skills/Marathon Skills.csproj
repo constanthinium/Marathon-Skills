@@ -78,6 +78,12 @@
     <Compile Include="Forms\RegisterAsARunnerForm.Designer.cs">
       <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RegisterAsARunnerForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterAsARunnerForm2.Designer.cs">
+      <DependentUpon>RegisterAsARunnerForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RunnerMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterAsARunnerForm.resx">
       <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterAsARunnerForm2.resx">
+      <DependentUpon>RegisterAsARunnerForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RunnerMenuForm.resx">
       <DependentUpon>RunnerMenuForm.cs</DependentUpon>
