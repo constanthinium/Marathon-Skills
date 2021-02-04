@@ -13,5 +13,13 @@ namespace Marathon_Skills.Forms
             var time = new DateTime(2016, 11, 24, 6, 0, 0) - DateTime.Now;
             label3.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
         }
+
+        private void ToSponsor(object sender, EventArgs e)
+        {
+            Hide();
+            var sponsorForm = new SponsorForm();
+            sponsorForm.Closed += (o, args) => Close();
+            sponsorForm.Show();
+        }
     }
 }

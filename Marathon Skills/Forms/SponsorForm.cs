@@ -27,6 +27,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             var set = new DataSet();
             adapter.Fill(set);
 
+            // takes 25 seconds!!!
             comboBox1.DataSource = set.Tables[0];
             comboBox1.ValueMember = "Runner";
         }
