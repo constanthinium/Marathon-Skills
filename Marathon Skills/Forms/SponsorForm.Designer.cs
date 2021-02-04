@@ -34,18 +34,12 @@ namespace Marathon_Skills.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.placeholderTextBox2 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.placeholderTextBox3 = new Marathon_Skills.Controls.PlaceholderTextBox();
-            this.placeholderTextBox4 = new Marathon_Skills.Controls.PlaceholderTextBox();
-            this.placeholderTextBox5 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.placeholderTextBox6 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
@@ -56,10 +50,16 @@ namespace Marathon_Skills.Forms
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -110,17 +110,6 @@ namespace Marathon_Skills.Forms
             this.label4.Tag = "";
             this.label4.Text = "Ваше имя:";
             // 
-            // placeholderTextBox1
-            // 
-            this.placeholderTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox1.Location = new System.Drawing.Point(164, 179);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.Placeholder = "Ваше имя";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(198, 29);
-            this.placeholderTextBox1.TabIndex = 4;
-            this.placeholderTextBox1.Text = "Ваше имя";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -134,23 +123,13 @@ namespace Marathon_Skills.Forms
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(164, 213);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(198, 29);
             this.comboBox1.TabIndex = 6;
-            // 
-            // placeholderTextBox2
-            // 
-            this.placeholderTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox2.Location = new System.Drawing.Point(164, 248);
-            this.placeholderTextBox2.Name = "placeholderTextBox2";
-            this.placeholderTextBox2.Placeholder = "Владелец карты";
-            this.placeholderTextBox2.Size = new System.Drawing.Size(198, 29);
-            this.placeholderTextBox2.TabIndex = 7;
-            this.placeholderTextBox2.Text = "Владелец карты";
             // 
             // label6
             // 
@@ -162,39 +141,6 @@ namespace Marathon_Skills.Forms
             this.label6.TabIndex = 8;
             this.label6.Tag = "";
             this.label6.Text = "Карта:";
-            // 
-            // placeholderTextBox3
-            // 
-            this.placeholderTextBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox3.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox3.Location = new System.Drawing.Point(164, 283);
-            this.placeholderTextBox3.Name = "placeholderTextBox3";
-            this.placeholderTextBox3.Placeholder = "Владелец карты";
-            this.placeholderTextBox3.Size = new System.Drawing.Size(198, 29);
-            this.placeholderTextBox3.TabIndex = 9;
-            this.placeholderTextBox3.Text = "1234 1234 1234 1234";
-            // 
-            // placeholderTextBox4
-            // 
-            this.placeholderTextBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox4.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox4.Location = new System.Drawing.Point(164, 318);
-            this.placeholderTextBox4.Name = "placeholderTextBox4";
-            this.placeholderTextBox4.Placeholder = "Владелец карты";
-            this.placeholderTextBox4.Size = new System.Drawing.Size(39, 29);
-            this.placeholderTextBox4.TabIndex = 10;
-            this.placeholderTextBox4.Text = "01";
-            // 
-            // placeholderTextBox5
-            // 
-            this.placeholderTextBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox5.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox5.Location = new System.Drawing.Point(209, 318);
-            this.placeholderTextBox5.Name = "placeholderTextBox5";
-            this.placeholderTextBox5.Placeholder = "Владелец карты";
-            this.placeholderTextBox5.Size = new System.Drawing.Size(62, 29);
-            this.placeholderTextBox5.TabIndex = 11;
-            this.placeholderTextBox5.Text = "2017";
             // 
             // label7
             // 
@@ -228,17 +174,6 @@ namespace Marathon_Skills.Forms
             this.label9.TabIndex = 14;
             this.label9.Tag = "";
             this.label9.Text = "CVC:";
-            // 
-            // placeholderTextBox6
-            // 
-            this.placeholderTextBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.placeholderTextBox6.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox6.Location = new System.Drawing.Point(164, 353);
-            this.placeholderTextBox6.Name = "placeholderTextBox6";
-            this.placeholderTextBox6.Placeholder = "Владелец карты";
-            this.placeholderTextBox6.Size = new System.Drawing.Size(62, 29);
-            this.placeholderTextBox6.TabIndex = 15;
-            this.placeholderTextBox6.Text = "123";
             // 
             // panel1
             // 
@@ -348,32 +283,58 @@ namespace Marathon_Skills.Forms
             this.textBox1.TabIndex = 22;
             this.textBox1.Text = "50";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // roundedButton1
+            // maskedTextBox1
             // 
-            this.roundedButton1.AutoSize = true;
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton1.Location = new System.Drawing.Point(511, 288);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(50, 43);
-            this.roundedButton1.TabIndex = 23;
-            this.roundedButton1.Text = "-";
-            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(164, 283);
+            this.maskedTextBox1.Mask = "0000 0000 0000 0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(198, 29);
+            this.maskedTextBox1.TabIndex = 27;
             // 
-            // roundedButton2
+            // maskedTextBox2
             // 
-            this.roundedButton2.AutoSize = true;
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton2.Location = new System.Drawing.Point(648, 288);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(50, 43);
-            this.roundedButton2.TabIndex = 24;
-            this.roundedButton2.Text = "+";
-            this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.maskedTextBox2.Location = new System.Drawing.Point(164, 318);
+            this.maskedTextBox2.Mask = "00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(39, 29);
+            this.maskedTextBox2.TabIndex = 28;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.maskedTextBox3.Location = new System.Drawing.Point(209, 318);
+            this.maskedTextBox3.Mask = "0000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(90, 29);
+            this.maskedTextBox3.TabIndex = 29;
+            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.maskedTextBox4.Location = new System.Drawing.Point(164, 353);
+            this.maskedTextBox4.Mask = "000";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(39, 29);
+            this.maskedTextBox4.TabIndex = 30;
+            this.maskedTextBox4.ValidatingType = typeof(System.DateTime);
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.AutoSize = true;
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton4.Location = new System.Drawing.Point(626, 345);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(93, 43);
+            this.roundedButton4.TabIndex = 26;
+            this.roundedButton4.Text = "Отмена";
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
@@ -388,17 +349,49 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.Submit);
             // 
-            // roundedButton4
+            // roundedButton2
             // 
-            this.roundedButton4.AutoSize = true;
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton4.Location = new System.Drawing.Point(626, 345);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(93, 43);
-            this.roundedButton4.TabIndex = 26;
-            this.roundedButton4.Text = "Отмена";
-            this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton2.AutoSize = true;
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton2.Location = new System.Drawing.Point(648, 288);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(50, 43);
+            this.roundedButton2.TabIndex = 24;
+            this.roundedButton2.Text = "+";
+            this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.AutoSize = true;
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton1.Location = new System.Drawing.Point(511, 288);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(50, 43);
+            this.roundedButton1.TabIndex = 23;
+            this.roundedButton1.Text = "-";
+            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox2.Location = new System.Drawing.Point(163, 179);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(199, 29);
+            this.textBox2.TabIndex = 31;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox3.Location = new System.Drawing.Point(164, 246);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(199, 29);
+            this.textBox3.TabIndex = 32;
             // 
             // SponsorForm
             // 
@@ -406,6 +399,12 @@ namespace Marathon_Skills.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.maskedTextBox4);
+            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton3);
             this.Controls.Add(this.roundedButton2);
@@ -417,18 +416,12 @@ namespace Marathon_Skills.Forms
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.placeholderTextBox6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.placeholderTextBox5);
-            this.Controls.Add(this.placeholderTextBox4);
-            this.Controls.Add(this.placeholderTextBox3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.placeholderTextBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.placeholderTextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -453,18 +446,12 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private PlaceholderTextBox placeholderTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
-        private PlaceholderTextBox placeholderTextBox2;
         private System.Windows.Forms.Label label6;
-        private PlaceholderTextBox placeholderTextBox3;
-        private PlaceholderTextBox placeholderTextBox4;
-        private PlaceholderTextBox placeholderTextBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private PlaceholderTextBox placeholderTextBox6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
@@ -479,5 +466,11 @@ namespace Marathon_Skills.Forms
         private RoundedButton roundedButton4;
         private RoundedButton roundedButton5;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
