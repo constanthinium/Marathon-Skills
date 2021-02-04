@@ -4,14 +4,12 @@ using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
-    public partial class DispatcherForm : Form
+    public class DispatcherForm : Form
     {
         private static readonly ObservableCollection<Form> Forms = new ObservableCollection<Form>();
 
         public DispatcherForm()
         {
-            InitializeComponent();
-
             FormBorderStyle = FormBorderStyle.None;
             ShowInTaskbar = false;
             Load += (sender, args) => Size = Size.Empty;
