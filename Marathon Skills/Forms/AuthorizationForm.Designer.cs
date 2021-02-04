@@ -31,17 +31,17 @@ namespace Marathon_Skills.Forms
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
-            this.placeholderTextBox2 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
+            this.placeholderTextBox2 = new Marathon_Skills.Controls.PlaceholderTextBox();
+            this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
+            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -67,16 +67,6 @@ namespace Marathon_Skills.Forms
             this.label15.Size = new System.Drawing.Size(401, 37);
             this.label15.TabIndex = 27;
             this.label15.Text = "MARATHON SKILLS 2016";
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton5.TabIndex = 1;
-            this.roundedButton5.Text = "Назад";
-            this.roundedButton5.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -122,26 +112,6 @@ namespace Marathon_Skills.Forms
             this.label1.TabIndex = 31;
             this.label1.Text = "Форма авторизации";
             // 
-            // placeholderTextBox1
-            // 
-            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox1.Location = new System.Drawing.Point(286, 182);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.Placeholder = "Enter your email address";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(229, 20);
-            this.placeholderTextBox1.TabIndex = 33;
-            this.placeholderTextBox1.Text = "Enter your email address";
-            // 
-            // placeholderTextBox2
-            // 
-            this.placeholderTextBox2.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox2.Location = new System.Drawing.Point(286, 227);
-            this.placeholderTextBox2.Name = "placeholderTextBox2";
-            this.placeholderTextBox2.Placeholder = "Enter your password";
-            this.placeholderTextBox2.Size = new System.Drawing.Size(229, 20);
-            this.placeholderTextBox2.TabIndex = 34;
-            this.placeholderTextBox2.Text = "Enter your password";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -164,16 +134,6 @@ namespace Marathon_Skills.Forms
             this.label3.Tag = "";
             this.label3.Text = "Password:";
             // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton1.Location = new System.Drawing.Point(286, 281);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(85, 33);
-            this.roundedButton1.TabIndex = 28;
-            this.roundedButton1.Text = "Login";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
             // roundedButton2
             // 
             this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
@@ -183,6 +143,49 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 37;
             this.roundedButton2.Text = "Cancel";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.Back);
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton1.Location = new System.Drawing.Point(286, 281);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(85, 33);
+            this.roundedButton1.TabIndex = 28;
+            this.roundedButton1.Text = "Login";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
+            // placeholderTextBox2
+            // 
+            this.placeholderTextBox2.ForeColor = System.Drawing.Color.Gray;
+            this.placeholderTextBox2.Location = new System.Drawing.Point(286, 227);
+            this.placeholderTextBox2.Name = "placeholderTextBox2";
+            this.placeholderTextBox2.Placeholder = "Enter your password";
+            this.placeholderTextBox2.Size = new System.Drawing.Size(229, 20);
+            this.placeholderTextBox2.TabIndex = 34;
+            this.placeholderTextBox2.Text = "Enter your password";
+            // 
+            // placeholderTextBox1
+            // 
+            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.placeholderTextBox1.Location = new System.Drawing.Point(286, 182);
+            this.placeholderTextBox1.Name = "placeholderTextBox1";
+            this.placeholderTextBox1.Placeholder = "Enter your email address";
+            this.placeholderTextBox1.Size = new System.Drawing.Size(229, 20);
+            this.placeholderTextBox1.TabIndex = 33;
+            this.placeholderTextBox1.Text = "Enter your email address";
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton5.TabIndex = 1;
+            this.roundedButton5.Text = "Назад";
+            this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.Back);
             // 
             // AuthorizationForm
             // 

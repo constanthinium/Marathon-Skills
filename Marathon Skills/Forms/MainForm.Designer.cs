@@ -111,6 +111,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 3;
             this.roundedButton1.Text = "Login";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // button1
             // 

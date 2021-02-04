@@ -29,5 +29,10 @@ namespace Marathon_Skills.Forms
         {
             Program.MoveToForm<DetailedInformationForm>(this);
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            Program.MoveToForm<AuthorizationForm>(this);
+        }
     }
 }
