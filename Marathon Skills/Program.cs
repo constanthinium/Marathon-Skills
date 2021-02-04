@@ -25,17 +25,26 @@ namespace Marathon_Skills
             };
 
             MoveToForm<MainForm>(null);
+
             Application.Run(dispatcherForm);
         }
 
         public static void MoveToForm<T>(Form formToClose) where T : Form, new()
         {
             var form = new T();
-            form.Closed += (sender, args) => Forms.Remove(form);
             Forms.Add(form);
+            form.Closed += (sender, args) => Forms.Remove(form);
             form.Show();
 
             formToClose?.Close();
+        }
+
+        public static void MoveToForm(Form from, Form to)
+        {
+            Forms.Add(to);
+            to.Closed += (sender, args) => Forms.Remove(to);
+            to.Show();
+            from.Close();
         }
 
         public static void LoadTime(Label label)
