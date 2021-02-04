@@ -7,6 +7,9 @@ namespace Marathon_Skills.Forms
 {
     public partial class SponsorForm : Form
     {
+        private readonly SqlConnection _con = new SqlConnection(
+            @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
+
         public SponsorForm()
         {
             InitializeComponent();
@@ -14,16 +17,14 @@ namespace Marathon_Skills.Forms
             var time = new DateTime(2016, 11, 24, 6, 0, 0) - DateTime.Now;
             label10.Text = $"{time.Days} дней {time.Hours} часов и {time.Minutes} минут до старта марафона!";
 
-            var con = new SqlConnection(
-                @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
             var adapter = new SqlDataAdapter(@"
 select concat(FirstName, ', ', LastName, ' - ', BibNumber, ' (', Runner.CountryCode, ')') as Runner
 from Runner
 join [User] on Runner.Email = [User].Email
 join Registration on Runner.RunnerId = Registration.RunnerId
 join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.RegistrationId
-            ", con);
-            con.Open();
+            ", _con);
+            _con.Open();
             var set = new DataSet();
             adapter.Fill(set);
 
@@ -58,6 +59,11 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 MessageBox.Show("CVC должен содержать 3 цифры");
                 return;
             }
+
+            // TODO: ну что-нибудь надо сюда вставить уж точно
+            new SqlCommand("insert into Sponsorship (SponsorName, RegistrationId, Amount)" +
+                           $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
+                .ExecuteNonQuery();
 
             MessageBox.Show("Пожертвование выполнено (нет)");
         }
