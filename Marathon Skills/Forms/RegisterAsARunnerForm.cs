@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
@@ -14,6 +7,13 @@ namespace Marathon_Skills.Forms
         public RegisterAsARunnerForm()
         {
             InitializeComponent();
+
+            Program.LoadTime(label10);
+        }
+
+        private void roundedButton5_Click(object sender, System.EventArgs e)
+        {
+            Program.MoveToForm<MainForm>(this);
         }
     }
 }

@@ -19,5 +19,15 @@ namespace Marathon_Skills.Forms
             Cursor.Current = Cursors.WaitCursor;
             Program.MoveToForm<SponsorForm>(this);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.MoveToForm<RegisterAsARunnerForm>(this);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Program.MoveToForm<DetailedInformationForm>(this);
+        }
     }
 }
