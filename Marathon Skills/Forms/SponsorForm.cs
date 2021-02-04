@@ -65,7 +65,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                            $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
                 .ExecuteNonQuery();
 
-            MessageBox.Show("Пожертвование выполнено (нет)");
+            Program.MoveToForm<SponsorConfirmForm>(this);
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
@@ -89,8 +89,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void Back(object sender, EventArgs e)
         {
-            Program.OpenForm<MainForm>();
-            Close();
+            Program.MoveToForm<MainForm>(this);
         }
     }
 }

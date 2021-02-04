@@ -15,5 +15,10 @@ namespace Marathon_Skills.Forms
         {
             InitializeComponent();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            Program.MoveToForm<SponsorForm>(this);
+        }
     }
 }
