@@ -275,7 +275,6 @@ namespace Marathon_Skills.Forms
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(567, 293);
             this.textBox1.Name = "textBox1";

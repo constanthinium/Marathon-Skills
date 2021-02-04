@@ -34,7 +34,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void Submit(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (textBox2.Text == "" || textBox3.Text == "")
             {
                 MessageBox.Show("Поля имя и владелец карты не могут быть пустыми");
                 return;
@@ -46,8 +46,8 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 return;
             }
 
-            if (!maskedTextBox2.MaskFull || !maskedTextBox3.MaskFull ||
-                new DateTime(int.Parse(maskedTextBox3.Text), int.Parse(maskedTextBox2.Text), 0) < DateTime.Now)
+            if (!maskedTextBox2.MaskFull || !maskedTextBox3.MaskFull || int.Parse(maskedTextBox2.Text) > 12 ||
+                new DateTime(int.Parse(maskedTextBox3.Text), int.Parse(maskedTextBox2.Text), 1) < DateTime.Now)
             {
                 MessageBox.Show("Месяц и год срока действия должны быть заполнены, а также быть меньше, чем сегодняшняя дата");
                 return;
@@ -58,6 +58,8 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 MessageBox.Show("CVC должен содержать 3 цифры");
                 return;
             }
+
+            MessageBox.Show("Пожертвование выполнено (нет)");
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
