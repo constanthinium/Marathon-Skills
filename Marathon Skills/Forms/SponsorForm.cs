@@ -80,5 +80,11 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             if (int.TryParse(textBox1.Text, out _))
                 label14.Text = textBox1.Text + '$';
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            DispatcherForm.OpenForm<MainForm>();
+            Close();
+        }
     }
 }

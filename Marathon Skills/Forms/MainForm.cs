@@ -3,7 +3,6 @@ using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
-    
     public partial class MainForm : Form
     {
         public MainForm()
@@ -16,10 +15,8 @@ namespace Marathon_Skills.Forms
 
         private void ToSponsor(object sender, EventArgs e)
         {
-            Hide();
-            var sponsorForm = new SponsorForm();
-            sponsorForm.Closed += (o, args) => Close();
-            sponsorForm.Show();
+            DispatcherForm.OpenForm<SponsorForm>();
+            Close();
         }
     }
 }
