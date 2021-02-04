@@ -89,7 +89,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void Back(object sender, EventArgs e)
         {
-            DispatcherForm.OpenForm<MainForm>();
+            Program.OpenForm<MainForm>();
             Close();
         }
     }

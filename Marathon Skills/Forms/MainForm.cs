@@ -15,7 +15,7 @@ namespace Marathon_Skills.Forms
 
         private void ToSponsor(object sender, EventArgs e)
         {
-            DispatcherForm.OpenForm<SponsorForm>();
+            Program.OpenForm<SponsorForm>();
             Close();
         }
     }
