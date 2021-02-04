@@ -7,6 +7,8 @@ namespace Marathon_Skills.Forms
 {
     public partial class SponsorForm : Form
     {
+        private bool _disableLongQueries = true;
+
         private readonly SqlConnection _con = new SqlConnection(
             @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
 
@@ -16,20 +18,25 @@ namespace Marathon_Skills.Forms
 
             Program.LoadTime(label10);
 
-            var adapter = new SqlDataAdapter(@"
+            if (!_disableLongQueries)
+            {
+                var adapter = new SqlDataAdapter(@"
 select concat(FirstName, ', ', LastName, ' - ', BibNumber, ' (', Runner.CountryCode, ')') as Runner
 from Runner
 join [User] on Runner.Email = [User].Email
 join Registration on Runner.RunnerId = Registration.RunnerId
 join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.RegistrationId
             ", _con);
-            _con.Open();
-            var set = new DataSet();
-            adapter.Fill(set);
+                _con.Open();
+                var set = new DataSet();
+                adapter.Fill(set);
 
-            // takes 25 seconds!!!
-            comboBox1.DataSource = set.Tables[0];
-            comboBox1.ValueMember = "Runner";
+                // takes 25 seconds!!!
+                comboBox1.DataSource = set.Tables[0];
+                comboBox1.ValueMember = "Runner";
+            }
+            else
+                comboBox1.Items.Add("Ahmad, Adkin - 1518 (IRL)");
         }
 
         private void Submit(object sender, EventArgs e)
@@ -60,24 +67,24 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             }
 
             // TODO: ну что-нибудь надо сюда вставить уж точно
-            new SqlCommand("insert into Sponsorship (SponsorName, RegistrationId, Amount)" +
-                           $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
-                .ExecuteNonQuery();
+            //new SqlCommand("insert into Sponsorship (SponsorName, RegistrationId, Amount)" +
+            //               $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
+            //    .ExecuteNonQuery();
 
-            Program.MoveToForm<SponsorConfirmForm>(this);
+            Program.MoveToForm(this, new SponsorConfirmForm(
+                (comboBox1.SelectedValue ?? comboBox1.SelectedItem).ToString(), label12.Text, label14.Text));
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            var labelText = label14.Text;
-            label14.Text = int.Parse(labelText.Substring(0, labelText.IndexOf('$'))) + 10 + "$";
+            label14.Text = "$" + (int.Parse(label14.Text.Substring(1)) + 10);
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            var val = int.Parse(label14.Text.Substring(0, label14.Text.IndexOf('$')));
+            var val = int.Parse(label14.Text.Substring(1));
             if (val > 10)
-                label14.Text = val - 10 + "$";
+                label14.Text = "$" + (val - 10);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

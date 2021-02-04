@@ -142,7 +142,7 @@ namespace Marathon_Skills.Forms
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(102, 55);
             this.label14.TabIndex = 23;
-            this.label14.Text = "50$";
+            this.label14.Text = "$50";
             // 
             // label13
             // 
@@ -153,7 +153,7 @@ namespace Marathon_Skills.Forms
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(209, 32);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Фонд кошелек";
+            this.label13.Text = "Фонд кошек";
             // 
             // roundedButton1
             // 

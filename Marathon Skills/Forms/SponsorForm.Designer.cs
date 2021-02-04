@@ -272,7 +272,7 @@ namespace Marathon_Skills.Forms
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(71, 37);
             this.label14.TabIndex = 21;
-            this.label14.Text = "50$";
+            this.label14.Text = "$50";
             // 
             // textBox1
             // 
