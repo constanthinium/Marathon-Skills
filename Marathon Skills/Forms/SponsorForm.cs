@@ -7,7 +7,7 @@ namespace Marathon_Skills.Forms
 {
     public partial class SponsorForm : Form
     {
-        private bool _disableLongQueries = true;
+        private bool _disableLongQueries = false;
 
         private readonly SqlConnection _con = new SqlConnection(
             @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
@@ -29,14 +29,17 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             ", _con);
                 _con.Open();
                 var set = new DataSet();
+
+                // Takes 25 seconds:
                 adapter.Fill(set);
 
-                // takes 25 seconds!!!
                 comboBox1.DataSource = set.Tables[0];
                 comboBox1.ValueMember = "Runner";
             }
             else
                 comboBox1.Items.Add("Ahmad, Adkin - 1518 (IRL)");
+
+            Cursor.Current = Cursors.Arrow;
         }
 
         private void Submit(object sender, EventArgs e)
