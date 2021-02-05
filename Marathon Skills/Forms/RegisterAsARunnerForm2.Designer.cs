@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace Marathon_Skills.Forms
 {
     partial class RegisterAsARunnerForm2
@@ -94,6 +96,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -270,11 +273,13 @@ namespace Marathon_Skills.Forms
             this.pictureBox1.Location = new System.Drawing.Point(611, 129);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
             // 
             // placeholderTextBox6
             // 
+            this.placeholderTextBox6.Enabled = false;
             this.placeholderTextBox6.ForeColor = System.Drawing.Color.Gray;
             this.placeholderTextBox6.Location = new System.Drawing.Point(439, 250);
             this.placeholderTextBox6.Name = "placeholderTextBox6";
@@ -302,6 +307,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 56;
             this.roundedButton1.Text = "Просмотр...";
             this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // dateTimePicker1
             // 
@@ -350,6 +356,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 61;
             this.roundedButton2.Text = "Регистрация";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton3
             // 
@@ -359,6 +366,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.TabIndex = 62;
             this.roundedButton3.Text = "Отмена";
             this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // RegisterAsARunnerForm2
             // 
