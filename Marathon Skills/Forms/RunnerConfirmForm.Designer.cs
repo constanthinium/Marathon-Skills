@@ -74,6 +74,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.Home);
             // 
             // panel2
             // 
@@ -106,6 +107,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 30;
             this.roundedButton1.Text = "Ок";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.Home);
             // 
             // label2
             // 
