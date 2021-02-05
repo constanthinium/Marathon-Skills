@@ -9,8 +9,7 @@ namespace Marathon_Skills.Forms
     {
         private bool _disableLongQueries = false;
 
-        private readonly SqlConnection _con = new SqlConnection(
-            @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
+        private readonly SqlConnection _con = new SqlConnection(Program.ConnectionString);
 
         public SponsorForm()
         {

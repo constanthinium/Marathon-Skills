@@ -14,7 +14,7 @@ namespace Marathon_Skills.Forms
 
             panel3.Controls.Clear();
 
-            var con = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
+            var con = new SqlConnection(Program.ConnectionString);
             con.Open();
             var reader = new SqlCommand("select CharityName, CharityDescription, CharityLogo from Charity", con).ExecuteReader();
 

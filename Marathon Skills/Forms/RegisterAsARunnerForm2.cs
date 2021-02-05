@@ -9,8 +9,7 @@ namespace Marathon_Skills.Forms
 {
     public partial class RegisterAsARunnerForm2 : Form
     {
-        private readonly SqlConnection _con = new SqlConnection(
-            "Server=localhost\\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;");
+        private readonly SqlConnection _con = new SqlConnection(Program.ConnectionString);
 
         private SqlDataAdapter _adapter;
         private DataSet _set;

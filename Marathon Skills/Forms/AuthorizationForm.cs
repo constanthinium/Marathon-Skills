@@ -16,7 +16,7 @@ namespace Marathon_Skills.Forms
         {
             string roleId;
 
-            using (var con = new SqlConnection(@"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;"))
+            using (var con = new SqlConnection(Program.ConnectionString))
             {
                 con.Open();
                 roleId = (string)new SqlCommand($"select RoleId from [User] where Email = '{placeholderTextBox1.Text}' and Password = '{placeholderTextBox2.Text}'", con).ExecuteScalar();
