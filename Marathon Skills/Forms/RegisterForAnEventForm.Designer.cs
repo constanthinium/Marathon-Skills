@@ -34,8 +34,6 @@ namespace Marathon_Skills.Forms
             this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -49,10 +47,12 @@ namespace Marathon_Skills.Forms
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
+            this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +88,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -109,30 +110,6 @@ namespace Marathon_Skills.Forms
             this.label10.Size = new System.Drawing.Size(490, 24);
             this.label10.TabIndex = 1;
             this.label10.Text = "18 дней 8 часов и 17 минут до старта марафона!";
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.AutoSize = true;
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton4.Location = new System.Drawing.Point(410, 366);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(93, 28);
-            this.roundedButton4.TabIndex = 51;
-            this.roundedButton4.Text = "Отмена";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.AutoSize = true;
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton3.Location = new System.Drawing.Point(311, 366);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(93, 28);
-            this.roundedButton3.TabIndex = 50;
-            this.roundedButton3.Text = "Заплатить";
-            this.roundedButton3.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -245,6 +222,7 @@ namespace Marathon_Skills.Forms
             this.checkBox1.TabIndex = 53;
             this.checkBox1.Text = "42km Полный марафон ($145)";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.UpdatePrice);
             // 
             // checkBox2
             // 
@@ -256,6 +234,7 @@ namespace Marathon_Skills.Forms
             this.checkBox2.TabIndex = 54;
             this.checkBox2.Text = "21km Полумарафон ($75)";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.UpdatePrice);
             // 
             // checkBox3
             // 
@@ -267,6 +246,7 @@ namespace Marathon_Skills.Forms
             this.checkBox3.TabIndex = 55;
             this.checkBox3.Text = "5km Малая дистанция ($20)";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.UpdatePrice);
             // 
             // comboBox1
             // 
@@ -277,16 +257,6 @@ namespace Marathon_Skills.Forms
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(145, 29);
             this.comboBox1.TabIndex = 56;
-            // 
-            // placeholderTextBox1
-            // 
-            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
-            this.placeholderTextBox1.Location = new System.Drawing.Point(163, 350);
-            this.placeholderTextBox1.Name = "placeholderTextBox1";
-            this.placeholderTextBox1.Placeholder = "500$";
-            this.placeholderTextBox1.Size = new System.Drawing.Size(106, 20);
-            this.placeholderTextBox1.TabIndex = 57;
-            this.placeholderTextBox1.Text = "500$";
             // 
             // radioButton1
             // 
@@ -299,6 +269,7 @@ namespace Marathon_Skills.Forms
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Вариант А (0$): Номер бегуна + RFID браслет";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.UpdatePrice);
             // 
             // radioButton2
             // 
@@ -311,6 +282,7 @@ namespace Marathon_Skills.Forms
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Вариант В (20$): вариант А + бейсболка + бутылка \r\nводы";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.UpdatePrice);
             // 
             // radioButton3
             // 
@@ -323,6 +295,45 @@ namespace Marathon_Skills.Forms
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Вариант С (45$): вариант В + футболка + сувенирный\r\nбуклет\r\n";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.UpdatePrice);
+            // 
+            // placeholderTextBox1
+            // 
+            this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.placeholderTextBox1.Location = new System.Drawing.Point(163, 350);
+            this.placeholderTextBox1.Name = "placeholderTextBox1";
+            this.placeholderTextBox1.Placeholder = "500$";
+            this.placeholderTextBox1.Size = new System.Drawing.Size(106, 20);
+            this.placeholderTextBox1.TabIndex = 57;
+            this.placeholderTextBox1.Text = "500$";
+            this.placeholderTextBox1.TextChanged += new System.EventHandler(this.UpdatePrice);
+            this.placeholderTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.placeholderTextBox1_KeyPress);
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.AutoSize = true;
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton4.Location = new System.Drawing.Point(410, 366);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(93, 28);
+            this.roundedButton4.TabIndex = 51;
+            this.roundedButton4.Text = "Отмена";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton5_Click);
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.AutoSize = true;
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton3.Location = new System.Drawing.Point(311, 366);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(93, 28);
+            this.roundedButton3.TabIndex = 50;
+            this.roundedButton3.Text = "Заплатить";
+            this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // RegisterForAnEventForm
             // 

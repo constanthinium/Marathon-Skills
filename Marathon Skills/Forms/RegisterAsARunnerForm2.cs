@@ -83,15 +83,16 @@ namespace Marathon_Skills.Forms
 
             var command = new SqlCommand($@"
 insert into Runner (Email, Gender, DateOfBirth, CountryCode, PicturePath)
+output inserted.RunnerId
 values ('{placeholderTextBox1.Text}', '{comboBox1.SelectedValue}', '{dateTimePicker1.Value}',
 '{placeholderTextBox2.Text}', {(placeholderTextBox6.Text != "" ? '\'' + placeholderTextBox6.Text + '\'' : null)})
 
 insert into [User] (Email, Password, FirstName, LastName, RoleId)
 values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
             ", _con);
-            command.ExecuteNonQuery();
+            var runnerId = (int)command.ExecuteScalar();
 
-            Program.MoveToForm<RegisterForAnEventForm>(this);
+            Program.MoveToForm(this, new RegisterForAnEventForm(runnerId));
         }
 
         private static bool ValidateEmail(string address)
