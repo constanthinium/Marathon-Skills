@@ -108,6 +108,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton6.TabIndex = 38;
             this.roundedButton6.Text = "Контакты";
             this.roundedButton6.UseVisualStyleBackColor = false;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton4
             // 
