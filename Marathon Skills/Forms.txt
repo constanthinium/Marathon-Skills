@@ -6,3 +6,13 @@ CharityOrganisationsForm - 1.10
 AuthorizationForm - 1.11
 RunnerMenuForm - 1.12
 CoordinatorMenuForm - 1.13
+
+RegisterAsARunnerForm2 - 2.1
+RegisterForAnEventForm - 2.2
+RunnerConfirmForm - 2.3
+EditRunnerProfileForm - 2.4
+MyRaceResultsForm - 2.5
+HowLongMarathonForm - 2.6
+AboutMarathonSkillsForm - 2.7
+InventoryForm - 2.8
+InventoryForm2 - 2.9
