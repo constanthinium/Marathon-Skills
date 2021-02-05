@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
-    public partial class EditRunnerProfileForm : Form
+    public partial class ImportVolunteersForm : Form
     {
-        public EditRunnerProfileForm()
+        public ImportVolunteersForm()
         {
             InitializeComponent();
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

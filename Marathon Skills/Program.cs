@@ -9,7 +9,7 @@ namespace Marathon_Skills
     internal static class Program
     {
         private static readonly ObservableCollection<Form> Forms = new ObservableCollection<Form>();
-        public const string ConnectionString = "Server=localhost\\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;";
+        public const string ConnectionString = @"Data Source=DESKTOP-Q9DUNC5\SQLEXPRESS;Initial Catalog=MarathonSkills;Integrated Security=True";
 
         [STAThread]
         private static void Main()

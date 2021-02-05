@@ -39,6 +39,12 @@
     <Compile Include="Forms\AboutMarathonSkillsForm.Designer.cs">
       <DependentUpon>AboutMarathonSkillsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddEditCharityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditCharityForm.Designer.cs">
+      <DependentUpon>AddEditCharityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdministratorMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     <Compile Include="Forms\HowLongMarathonForm.Designer.cs">
       <DependentUpon>HowLongMarathonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ImportVolunteersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportVolunteersForm.Designer.cs">
+      <DependentUpon>ImportVolunteersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,11 +120,23 @@
     <Compile Include="Controls\PlaceholderTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\ManageChariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageChariForm.Designer.cs">
+      <DependentUpon>ManageChariForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MyRaceResultsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MyRaceResultsForm.Designer.cs">
       <DependentUpon>MyRaceResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MySponsorshipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MySponsorshipForm.Designer.cs">
+      <DependentUpon>MySponsorshipForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegisterAsARunnerForm.cs">
       <SubType>Form</SubType>
@@ -156,6 +180,12 @@
     <Compile Include="Dialogs\SponsorDialog.Designer.cs">
       <DependentUpon>SponsorDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\VoluntererManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VoluntererManagementForm.Designer.cs">
+      <DependentUpon>VoluntererManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\RoundedButton.cs">
@@ -172,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AboutMarathonSkillsForm.resx">
       <DependentUpon>AboutMarathonSkillsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditCharityForm.resx">
+      <DependentUpon>AddEditCharityForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdministratorMenuForm.resx">
       <DependentUpon>AdministratorMenuForm.cs</DependentUpon>
@@ -194,6 +227,9 @@
     <EmbeddedResource Include="Forms\HowLongMarathonForm.resx">
       <DependentUpon>HowLongMarathonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportVolunteersForm.resx">
+      <DependentUpon>ImportVolunteersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\InventoryForm.resx">
       <DependentUpon>InventoryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,8 +239,14 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageChariForm.resx">
+      <DependentUpon>ManageChariForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MyRaceResultsForm.resx">
       <DependentUpon>MyRaceResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MySponsorshipForm.resx">
+      <DependentUpon>MySponsorshipForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterAsARunnerForm.resx">
       <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
@@ -226,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SponsorDialog.resx">
       <DependentUpon>SponsorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VoluntererManagementForm.resx">
+      <DependentUpon>VoluntererManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

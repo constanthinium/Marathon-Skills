@@ -1,7 +1,7 @@
 ﻿
 namespace Marathon_Skills.Forms
 {
-    partial class InventoryForm
+    partial class VoluntererManagementForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,8 @@ namespace Marathon_Skills.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
             this.label15 = new System.Windows.Forms.Label();
@@ -36,15 +38,39 @@ namespace Marathon_Skills.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12.25F);
+            this.label5.Location = new System.Drawing.Point(490, 229);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 19);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "123";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(321, 226);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(173, 22);
+            this.label4.TabIndex = 69;
+            this.label4.Tag = "";
+            this.label4.Text = "Всего валантеров:";
             // 
             // panel1
             // 
@@ -56,7 +82,7 @@ namespace Marathon_Skills.Forms
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 50);
-            this.panel1.TabIndex = 21;
+            this.panel1.TabIndex = 71;
             // 
             // roundedButton4
             // 
@@ -99,7 +125,7 @@ namespace Marathon_Skills.Forms
             this.panel2.Location = new System.Drawing.Point(0, 400);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 50);
-            this.panel2.TabIndex = 22;
+            this.panel2.TabIndex = 72;
             // 
             // label10
             // 
@@ -117,81 +143,106 @@ namespace Marathon_Skills.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.label1.Location = new System.Drawing.Point(345, 64);
+            this.label1.Location = new System.Drawing.Point(311, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 27);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Инвентарь";
+            this.label1.Size = new System.Drawing.Size(297, 27);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Управление волонтерами";
             // 
-            // label5
+            // label7
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12.25F);
-            this.label5.Location = new System.Drawing.Point(456, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 19);
-            this.label5.TabIndex = 68;
-            this.label5.Text = "123";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(13, 148);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(155, 22);
+            this.label7.TabIndex = 75;
+            this.label7.Tag = "";
+            this.label7.Text = "Сортировать по:";
             // 
-            // label4
+            // comboBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(23, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(427, 22);
-            this.label4.TabIndex = 67;
-            this.label4.Tag = "";
-            this.label4.Text = "Всего зарегистрированно бегунов на марафон:";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(174, 146);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(198, 29);
+            this.comboBox1.TabIndex = 74;
             // 
-            // roundedButton3
+            // roundedButton1
             // 
-            this.roundedButton3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton3.Location = new System.Drawing.Point(644, 371);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(144, 23);
-            this.roundedButton3.TabIndex = 88;
-            this.roundedButton3.Text = "Поступление";
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton1.Location = new System.Drawing.Point(515, 146);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(209, 29);
+            this.roundedButton1.TabIndex = 81;
+            this.roundedButton1.Text = "Загрузка волонтеров";
+            this.roundedButton1.UseVisualStyleBackColor = true;
             // 
             // roundedButton2
             // 
             this.roundedButton2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton2.Location = new System.Drawing.Point(12, 371);
+            this.roundedButton2.Location = new System.Drawing.Point(96, 192);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(144, 23);
-            this.roundedButton2.TabIndex = 87;
-            this.roundedButton2.Text = "Отчет";
+            this.roundedButton2.Size = new System.Drawing.Size(103, 23);
+            this.roundedButton2.TabIndex = 82;
+            this.roundedButton2.Text = "Обновить";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 16F);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.label11.Location = new System.Drawing.Point(62, 99);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(284, 25);
+            this.label11.TabIndex = 94;
+            this.label11.Text = "Сортировка и фильтрация";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 16F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.label2.Location = new System.Drawing.Point(571, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 25);
+            this.label2.TabIndex = 95;
+            this.label2.Text = "Загрузка";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 261);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 233);
-            this.dataGridView1.TabIndex = 89;
+            this.dataGridView1.Size = new System.Drawing.Size(742, 133);
+            this.dataGridView1.TabIndex = 96;
             // 
-            // InventoryForm
+            // VoluntererManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.roundedButton3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.roundedButton2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.roundedButton1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "InventoryForm";
-            this.Text = "InventoryForm";
+            this.Name = "VoluntererManagementForm";
+            this.Text = "VoluntererManagementForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -204,17 +255,21 @@ namespace Marathon_Skills.Forms
 
         #endregion
 
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
+        private Controls.RoundedButton roundedButton4;
         private System.Windows.Forms.Label label15;
         private Controls.RoundedButton roundedButton5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private Controls.RoundedButton roundedButton3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Controls.RoundedButton roundedButton4;
     }
 }

@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
 {
-    public partial class EditRunnerProfileForm : Form
+    public partial class MySponsorshipForm : Form
     {
-        public EditRunnerProfileForm()
+        public MySponsorshipForm()
         {
             InitializeComponent();
         }
-
-        
     }
 }

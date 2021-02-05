@@ -7,6 +7,8 @@ AuthorizationForm - 1.11
 RunnerMenuForm - 1.12
 CoordinatorMenuForm - 1.13
 
+
+
 RegisterAsARunnerForm2 - 2.1
 RegisterForAnEventForm - 2.2
 RunnerConfirmForm - 2.3
@@ -16,3 +18,12 @@ HowLongMarathonForm - 2.6
 AboutMarathonSkillsForm - 2.7
 InventoryForm - 2.8
 InventoryForm2 - 2.9
+
+
+
+
+ManageChariForm - 3.2
+AddEditCharityForm - 3.3
+VoluntererManagementForm - 3.4
+ImportVolunteersForm - 3.5
+MySponsorshipForm - 3.6
