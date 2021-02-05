@@ -15,7 +15,15 @@ namespace Marathon_Skills.Forms
         {
             InitializeComponent();
 
+            _con.Open();
+
             Program.LoadTime(label10);
+
+            var adapter2 = new SqlDataAdapter("select CharityName from Charity", _con);
+            var set2 = new DataSet();
+            adapter2.Fill(set2);
+            comboBox2.DataSource = set2.Tables[0];
+            comboBox2.ValueMember = "CharityName";
 
             if (!_disableLongQueries)
             {
@@ -26,7 +34,6 @@ join [User] on Runner.Email = [User].Email
 join Registration on Runner.RunnerId = Registration.RunnerId
 join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.RegistrationId
             ", _con);
-                _con.Open();
                 var set = new DataSet();
 
                 // Takes 25 seconds:
@@ -74,7 +81,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             //    .ExecuteNonQuery();
 
             Program.MoveToForm(this, new SponsorConfirmForm(
-                (comboBox1.SelectedValue ?? comboBox1.SelectedItem).ToString(), label12.Text, label14.Text));
+                (comboBox1.SelectedValue ?? comboBox1.SelectedItem).ToString(), comboBox2.SelectedValue.ToString(), label14.Text));
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
