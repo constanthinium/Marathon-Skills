@@ -111,6 +111,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 3;
             this.roundedButton1.Text = "Login";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // button1
             // 
@@ -124,6 +125,7 @@ namespace Marathon_Skills.Forms
             this.button1.TabIndex = 0;
             this.button1.Text = "Я хочу стать бегуном";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -151,6 +153,7 @@ namespace Marathon_Skills.Forms
             this.button3.TabIndex = 2;
             this.button3.Text = "Я хочу узнать больше о событии";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 
