@@ -106,6 +106,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.TabIndex = 43;
             this.roundedButton3.Text = "Я новый участник";
             this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton1
             // 
@@ -118,6 +119,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 42;
             this.roundedButton1.Text = "Я участвовал ранее";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedButton2
             // 
@@ -131,6 +133,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 44;
             this.roundedButton2.Text = "Login";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // RegisterAsARunnerForm
             // 
