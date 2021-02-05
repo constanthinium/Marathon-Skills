@@ -119,5 +119,15 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
         {
             e.Handled = !(char.IsDigit(e.KeyChar) || e.KeyChar == '\b');
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cmd = new SqlCommand($"select CharityName, CharityDescription, CharityLogo from Charity where CharityName = '{comboBox2.SelectedValue}'", _con);
+            using (var reader = cmd.ExecuteReader())
+            {
+                reader.Read();
+                new SponsorDialog(reader.GetString(0), reader.GetString(1), reader.GetString(2)).ShowDialog();
+            }
+        }
     }
 }

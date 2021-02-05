@@ -144,6 +144,12 @@
     <Compile Include="Forms\SponsorConfirmForm.Designer.cs">
       <DependentUpon>SponsorConfirmForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SponsorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SponsorDialog.Designer.cs">
+      <DependentUpon>SponsorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\RoundedButton.cs">
@@ -209,6 +215,9 @@
     <EmbeddedResource Include="Forms\SponsorConfirmForm.resx">
       <DependentUpon>SponsorConfirmForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SponsorDialog.resx">
+      <DependentUpon>SponsorDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -217,6 +226,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Forms\SponsorForm.resx">
       <DependentUpon>SponsorForm.cs</DependentUpon>
@@ -291,6 +301,7 @@
     <Content Include="Images\wwsm-rescue-logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\shell32_161.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
