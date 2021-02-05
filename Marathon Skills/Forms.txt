@@ -27,3 +27,11 @@ AddEditCharityForm - 3.3
 VoluntererManagementForm - 3.4
 ImportVolunteersForm - 3.5
 MySponsorshipForm - 3.6
+
+
+
+PreviousRaceResultsForm - 4.1
+RunnerManagementForm - 4.2
+SponsorOverviewForm - 4.5
+BMICalculatorForm - 4.6
+BMRCalculatorForm - 4.7

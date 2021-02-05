@@ -57,6 +57,18 @@
     <Compile Include="Forms\AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BMICalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BMICalculatorForm.Designer.cs">
+      <DependentUpon>BMICalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BMRCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BMRCalculatorForm.Designer.cs">
+      <DependentUpon>BMRCalculatorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CharityOrganisationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     <Compile Include="Forms\MySponsorshipForm.Designer.cs">
       <DependentUpon>MySponsorshipForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PreviousRaceResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreviousRaceResultsForm.Designer.cs">
+      <DependentUpon>PreviousRaceResultsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RegisterAsARunnerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,12 @@
     <Compile Include="Forms\RunnerConfirmForm.Designer.cs">
       <DependentUpon>RunnerConfirmForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RunnerManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RunnerManagementForm.Designer.cs">
+      <DependentUpon>RunnerManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RunnerMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +203,12 @@
     </Compile>
     <Compile Include="Dialogs\SponsorDialog.Designer.cs">
       <DependentUpon>SponsorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SponsorOverviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SponsorOverviewForm.Designer.cs">
+      <DependentUpon>SponsorOverviewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\VoluntererManagementForm.cs">
       <SubType>Form</SubType>
@@ -211,6 +241,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BMICalculatorForm.resx">
+      <DependentUpon>BMICalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BMRCalculatorForm.resx">
+      <DependentUpon>BMRCalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CharityOrganisationsForm.resx">
       <DependentUpon>CharityOrganisationsForm.cs</DependentUpon>
@@ -248,6 +284,9 @@
     <EmbeddedResource Include="Forms\MySponsorshipForm.resx">
       <DependentUpon>MySponsorshipForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreviousRaceResultsForm.resx">
+      <DependentUpon>PreviousRaceResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterAsARunnerForm.resx">
       <DependentUpon>RegisterAsARunnerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +299,9 @@
     <EmbeddedResource Include="Forms\RunnerConfirmForm.resx">
       <DependentUpon>RunnerConfirmForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RunnerManagementForm.resx">
+      <DependentUpon>RunnerManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RunnerMenuForm.resx">
       <DependentUpon>RunnerMenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SponsorDialog.resx">
       <DependentUpon>SponsorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SponsorOverviewForm.resx">
+      <DependentUpon>SponsorOverviewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\VoluntererManagementForm.resx">
       <DependentUpon>VoluntererManagementForm.cs</DependentUpon>
