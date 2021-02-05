@@ -69,6 +69,12 @@
     <Compile Include="Forms\BMRCalculatorForm.Designer.cs">
       <DependentUpon>BMRCalculatorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CertificatePreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CertificatePreviewForm.Designer.cs">
+      <DependentUpon>CertificatePreviewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CharityOrganisationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="Forms\EditRunnerProfileForm.Designer.cs">
       <DependentUpon>EditRunnerProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditRunnerProfileForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditRunnerProfileForm2.Designer.cs">
+      <DependentUpon>EditRunnerProfileForm2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HowLongMarathonForm.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,12 @@
     </Compile>
     <Compile Include="Controls\PlaceholderTextBox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageARunnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageARunnerForm.Designer.cs">
+      <DependentUpon>ManageARunnerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ManageChariForm.cs">
       <SubType>Form</SubType>
@@ -260,6 +278,9 @@
     <EmbeddedResource Include="Forms\EditRunnerProfileForm.resx">
       <DependentUpon>EditRunnerProfileForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditRunnerProfileForm2.resx">
+      <DependentUpon>EditRunnerProfileForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HowLongMarathonForm.resx">
       <DependentUpon>HowLongMarathonForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageARunnerForm.resx">
+      <DependentUpon>ManageARunnerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManageChariForm.resx">
       <DependentUpon>ManageChariForm.cs</DependentUpon>

@@ -35,3 +35,9 @@ RunnerManagementForm - 4.2
 SponsorOverviewForm - 4.5
 BMICalculatorForm - 4.6
 BMRCalculatorForm - 4.7
+
+
+
+ManageARunnerForm - 5.3
+EditRunnerProfileForm2 - 5.4
+CertificatePreviewForm - 5.5
