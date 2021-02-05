@@ -7,7 +7,7 @@ namespace Marathon_Skills.Forms
 {
     public partial class SponsorForm : Form
     {
-        private bool _disableLongQueries = false;
+        private bool _disableLongQueries = true;
 
         private readonly SqlConnection _con = new SqlConnection(Program.ConnectionString);
 
@@ -79,20 +79,28 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            label14.Text = "$" + (int.Parse(label14.Text.Substring(1)) + 10);
+            var val = int.Parse(textBox1.Text);
+            if (val < 1000)
+                textBox1.Text = (val + 10).ToString();
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            var val = int.Parse(label14.Text.Substring(1));
+            var val = int.Parse(textBox1.Text);
             if (val > 10)
-                label14.Text = "$" + (val - 10);
+                textBox1.Text = (val - 10).ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text, out _))
-                label14.Text = textBox1.Text + '$';
+            var amount = int.Parse(textBox1.Text);
+
+            if (amount < 10)
+                textBox1.Text = "10";
+            else if (amount > 1000)
+                textBox1.Text = "1000";
+
+            label14.Text = "$" + textBox1.Text;
         }
 
         private void Back(object sender, EventArgs e)

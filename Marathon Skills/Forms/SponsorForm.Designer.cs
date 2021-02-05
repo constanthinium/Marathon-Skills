@@ -42,7 +42,6 @@ namespace Marathon_Skills.Forms
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -197,18 +197,6 @@ namespace Marathon_Skills.Forms
             this.label15.TabIndex = 27;
             this.label15.Text = "MARATHON SKILLS 2016";
             // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton5.TabIndex = 1;
-            this.roundedButton5.Text = "Назад";
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            this.roundedButton5.Click += new System.EventHandler(this.Back);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -265,14 +253,14 @@ namespace Marathon_Skills.Forms
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.label14.Location = new System.Drawing.Point(568, 245);
+            this.label14.Location = new System.Drawing.Point(535, 246);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 37);
+            this.label14.Size = new System.Drawing.Size(130, 37);
             this.label14.TabIndex = 21;
             this.label14.Text = "$50";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox1
             // 
@@ -394,6 +382,18 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.roundedButton1.UseVisualStyleBackColor = true;
             this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton5.TabIndex = 1;
+            this.roundedButton5.Text = "Назад";
+            this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.Back);
             // 
             // SponsorForm
             // 
