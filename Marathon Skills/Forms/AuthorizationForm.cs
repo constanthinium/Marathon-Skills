@@ -16,11 +16,10 @@ namespace Marathon_Skills.Forms
         {
             string roleId;
 
-            using (var con = new SqlConnection(Program.ConnectionString))
-            {
-                con.Open();
-                roleId = (string)new SqlCommand($"select RoleId from [User] where Email = '{placeholderTextBox1.Text}' and Password = '{placeholderTextBox2.Text}'", con).ExecuteScalar();
-            }
+            var con = new SqlConnection(Program.ConnectionString);
+
+            con.Open();
+            roleId = (string)new SqlCommand($"select RoleId from [User] where Email = '{placeholderTextBox1.Text}' and Password = '{placeholderTextBox2.Text}'", con).ExecuteScalar();
 
             if (roleId != null)
             {
@@ -30,7 +29,9 @@ namespace Marathon_Skills.Forms
                         Program.MoveToForm<AdministratorMenuForm>(this);
                         break;
                     case "R":
-                        Program.MoveToForm<RunnerMenuForm>(this);
+                        var cmd = new SqlCommand($"select RunnerId from Runner where Email = '{placeholderTextBox1.Text}'", con);
+                        var runnerId = (int)cmd.ExecuteScalar();
+                        Program.MoveToForm(this, new RunnerMenuForm(runnerId));
                         break;
                     case "C":
                         Program.MoveToForm<CoordinatorMenuForm>(this);

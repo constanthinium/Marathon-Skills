@@ -157,6 +157,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 34;
             this.roundedButton1.Text = "Регистрация на марафон";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // label1
             // 
