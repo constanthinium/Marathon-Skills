@@ -45,7 +45,7 @@ namespace Marathon_Skills
             Forms.Add(to);
             to.Closed += (sender, args) => Forms.Remove(to);
             to.Show();
-            from.Close();
+            from?.Close();
         }
 
         public static void LoadTime(Label label)

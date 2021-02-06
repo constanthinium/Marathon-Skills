@@ -463,6 +463,18 @@
     <Content Include="Images\wwsm-rescue-logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\worm.jpg" />
+    <None Include="Resources\slug.jpg" />
+    <None Include="Resources\sloth.jpg" />
+    <None Include="Resources\ronaldinho.jpg" />
+    <None Include="Resources\pair-of-havaianas.jpg" />
+    <None Include="Resources\jaguar.jpg" />
+    <None Include="Resources\horse.png" />
+    <None Include="Resources\football-field.jpg" />
+    <None Include="Resources\f1-car.jpg" />
+    <None Include="Resources\capybara.jpg" />
+    <None Include="Resources\bus.jpg" />
+    <None Include="Resources\airbus-a380.jpg" />
     <None Include="Resources\teatro-municipal.jpg" />
     <None Include="Resources\marathon-image.jpg" />
     <None Include="Resources\ibirapuera-park-lake.jpg" />
