@@ -62,9 +62,9 @@ namespace Marathon_Skills.Forms
             }
             else if (!(
                 placeholderTextBox2.Text.Length >= 6 &&
-                placeholderTextBox2.Text.Any(c => char.IsUpper(c)) &&
-                placeholderTextBox2.Text.Any(c => char.IsDigit(c)) &&
-                placeholderTextBox2.Text.Any(c => char.IsPunctuation(c))
+                placeholderTextBox2.Text.Any(char.IsUpper) &&
+                placeholderTextBox2.Text.Any(char.IsDigit) &&
+                placeholderTextBox2.Text.Any(char.IsPunctuation)
                 ))
             {
                 MessageBox.Show("Неподходящий пароль");
@@ -82,13 +82,12 @@ namespace Marathon_Skills.Forms
             }
 
             var command = new SqlCommand($@"
+insert into [User] (Email, Password, FirstName, LastName, RoleId)
+values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
 insert into Runner (Email, Gender, DateOfBirth, CountryCode, PicturePath)
 output inserted.RunnerId
 values ('{placeholderTextBox1.Text}', '{comboBox1.SelectedValue}', '{dateTimePicker1.Value}',
-'{placeholderTextBox2.Text}', {(placeholderTextBox6.Text != "" ? '\'' + placeholderTextBox6.Text + '\'' : null)})
-
-insert into [User] (Email, Password, FirstName, LastName, RoleId)
-values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
+(select CountryCode from Country where CountryName = '{comboBox2.SelectedValue}'), {(placeholderTextBox6.Text != "" ? '\'' + placeholderTextBox6.Text + '\'' : null)})
             ", _con);
             var runnerId = (int)command.ExecuteScalar();
 
@@ -111,8 +110,7 @@ values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholde
         {
             var dialog = new OpenFileDialog { Filter = "Image|*.jpg" };
             if (dialog.ShowDialog() != DialogResult.OK) return;
-            pictureBox1.ImageLocation = dialog.FileName;
-            placeholderTextBox6.Text = dialog.SafeFileName;
+            placeholderTextBox6.Text = pictureBox1.ImageLocation = dialog.FileName;
         }
     }
 }

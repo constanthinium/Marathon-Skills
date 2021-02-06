@@ -63,9 +63,49 @@ namespace Marathon_Skills.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banco_banespa {
+            get {
+                object obj = ResourceManager.GetObject("banco-banespa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ibirapuera_park_lake {
+            get {
+                object obj = ResourceManager.GetObject("ibirapuera-park-lake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marathon_image {
+            get {
+                object obj = ResourceManager.GetObject("marathon-image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shell32_161 {
             get {
                 object obj = ResourceManager.GetObject("shell32_161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teatro_municipal {
+            get {
+                object obj = ResourceManager.GetObject("teatro-municipal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

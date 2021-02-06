@@ -284,6 +284,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox6.Location = new System.Drawing.Point(439, 250);
             this.placeholderTextBox6.Name = "placeholderTextBox6";
             this.placeholderTextBox6.Placeholder = "Photo_logo.jpg";
+            this.placeholderTextBox6.ReadOnly = true;
             this.placeholderTextBox6.Size = new System.Drawing.Size(122, 20);
             this.placeholderTextBox6.TabIndex = 54;
             this.placeholderTextBox6.Text = "Photo_logo.jpg";

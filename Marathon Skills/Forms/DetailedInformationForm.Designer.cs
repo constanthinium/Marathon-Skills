@@ -100,6 +100,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 21;
             this.roundedButton1.Text = "Marathon Skills 2016";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // panel2
             // 
