@@ -133,6 +133,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.TabIndex = 36;
             this.roundedButton3.Text = "Редактирование профиля";
             this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton2
             // 
