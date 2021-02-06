@@ -40,6 +40,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.roundedButton7 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@ namespace Marathon_Skills.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.roundedButton7);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.roundedButton5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -121,6 +123,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton4.TabIndex = 37;
             this.roundedButton4.Text = "Мой спонсор";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
@@ -172,6 +175,17 @@ namespace Marathon_Skills.Forms
             this.label1.TabIndex = 33;
             this.label1.Text = "Меню бегуна";
             // 
+            // roundedButton7
+            // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton7.Location = new System.Drawing.Point(713, 9);
+            this.roundedButton7.Name = "roundedButton7";
+            this.roundedButton7.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton7.TabIndex = 28;
+            this.roundedButton7.Text = "Logout";
+            this.roundedButton7.UseVisualStyleBackColor = false;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
+            // 
             // RunnerMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,5 +227,6 @@ namespace Marathon_Skills.Forms
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton1;
         private System.Windows.Forms.Label label1;
+        private Controls.RoundedButton roundedButton7;
     }
 }

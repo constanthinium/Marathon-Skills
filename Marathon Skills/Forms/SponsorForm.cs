@@ -7,7 +7,7 @@ namespace Marathon_Skills.Forms
 {
     public partial class SponsorForm : Form
     {
-        private bool _disableLongQueries = true;
+        private bool _disableLongQueries = false;
 
         private readonly SqlConnection _con = new SqlConnection(Program.ConnectionString);
 
@@ -80,7 +80,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
             //               $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
             //    .ExecuteNonQuery();
 
-            Program.MoveToForm(this, new SponsorConfirmForm(
+            Program.GoToForm(this, new SponsorConfirmForm(
                 (comboBox1.SelectedValue ?? comboBox1.SelectedItem).ToString(), comboBox2.SelectedValue.ToString(), label14.Text));
         }
 
@@ -112,7 +112,7 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void Back(object sender, EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

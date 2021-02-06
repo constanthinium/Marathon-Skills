@@ -9,7 +9,7 @@ namespace Marathon_Skills
     internal static class Program
     {
         private static readonly ObservableCollection<Form> Forms = new ObservableCollection<Form>();
-        public const string ConnectionString = @"Data Source=DESKTOP-Q9DUNC5\SQLEXPRESS;Initial Catalog=MarathonSkills;Integrated Security=True";
+        public const string ConnectionString = @"Server=localhost\SQLEXPRESS;Database=MarathonSkills;Trusted_Connection=True;";
 
         [STAThread]
         private static void Main()
@@ -25,12 +25,13 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            MoveToForm<MainForm>(null);
+            GoToForm<AboutMarathonSkillsForm>(null);
+            //GoToForm(null, new MyRaceResultsForm(100));
 
             Application.Run(dispatcherForm);
         }
 
-        public static void MoveToForm<T>(Form formToClose) where T : Form, new()
+        public static void GoToForm<T>(Form formToClose) where T : Form, new()
         {
             var form = new T();
             Forms.Add(form);
@@ -40,7 +41,7 @@ namespace Marathon_Skills
             formToClose?.Close();
         }
 
-        public static void MoveToForm(Form from, Form to)
+        public static void GoToForm(Form from, Form to)
         {
             Forms.Add(to);
             to.Closed += (sender, args) => Forms.Remove(to);

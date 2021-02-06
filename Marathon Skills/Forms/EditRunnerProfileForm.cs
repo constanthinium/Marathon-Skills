@@ -59,8 +59,8 @@ where Runner.RunnerId = {runnerId}
                 comboBox1.SelectedValue = reader.GetString(3);
                 dateTimePicker1.Value = reader.GetDateTime(4);
                 comboBox2.SelectedValue = reader.GetString(5);
-                comboBox3.SelectedValue = !reader.IsDBNull(6) ? reader.GetInt32(6) : 0;
-                path = reader.GetString(7);
+                comboBox3.SelectedValue = !reader.IsDBNull(6) ? reader.GetByte(6) : 0;
+                path = !reader.IsDBNull(7) ? reader.GetString(7) : null;
             }
 
             placeholderTextBox6.Text = path;
@@ -69,12 +69,12 @@ where Runner.RunnerId = {runnerId}
 
         private void Cancel(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
 
         private void Logout(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
 
         private void Save(object sender, System.EventArgs e)

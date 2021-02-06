@@ -13,6 +13,8 @@ namespace Marathon_Skills.Forms
             InitializeComponent();
 
             _runnerId = runnerId;
+
+            Program.LoadTime(label10);
         }
 
         private void roundedButton6_Click(object sender, EventArgs e)
@@ -22,17 +24,27 @@ namespace Marathon_Skills.Forms
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm(this, new RegisterForAnEventForm(_runnerId));
+            Program.GoToForm(this, new RegisterForAnEventForm(_runnerId));
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm(this, new MyRaceResultsForm(_runnerId));
+            Program.GoToForm(this, new MyRaceResultsForm(_runnerId));
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm(this, new EditRunnerProfileForm(_runnerId));
+            Program.GoToForm(this, new EditRunnerProfileForm(_runnerId));
+        }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            Program.GoToForm(this, new MySponsorshipForm(_runnerId));
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            Program.GoToForm<MainForm>(this);
         }
     }
 }

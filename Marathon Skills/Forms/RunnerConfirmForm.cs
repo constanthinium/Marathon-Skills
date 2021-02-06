@@ -14,7 +14,7 @@ namespace Marathon_Skills.Forms
 
         private void Home(object sender, EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Marathon_Skills.Forms
 
         private void roundedButton5_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<RegisterAsARunnerForm2>(this);
+            Program.GoToForm<RegisterAsARunnerForm2>(this);
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
@@ -67,7 +67,7 @@ values
 
             cmd.ExecuteNonQuery();
 
-            Program.MoveToForm<RunnerConfirmForm>(this);
+            Program.GoToForm<RunnerConfirmForm>(this);
         }
 
         private void placeholderTextBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -77,7 +77,8 @@ values
 
         private void UpdatePrice(object sender, EventArgs e)
         {
-            var sum = placeholderTextBox1.Text != "" ? int.Parse(placeholderTextBox1.Text) : 0;
+            if (!int.TryParse(placeholderTextBox1.Text, out var result)) return;
+            var sum = placeholderTextBox1.Text != "" ? result : 0;
 
             if (checkBox1.Checked)
                 sum += 145;
@@ -92,6 +93,11 @@ values
                 sum += 45;
 
             label14.Text = "$" + sum;
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            Program.GoToForm<MainForm>(this);
         }
     }
 }

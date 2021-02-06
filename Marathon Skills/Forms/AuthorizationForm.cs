@@ -26,15 +26,15 @@ namespace Marathon_Skills.Forms
                 switch (roleId)
                 {
                     case "A":
-                        Program.MoveToForm<AdministratorMenuForm>(this);
+                        Program.GoToForm<AdministratorMenuForm>(this);
                         break;
                     case "R":
                         var cmd = new SqlCommand($"select RunnerId from Runner where Email = '{placeholderTextBox1.Text}'", con);
                         var runnerId = (int)cmd.ExecuteScalar();
-                        Program.MoveToForm(this, new RunnerMenuForm(runnerId));
+                        Program.GoToForm(this, new RunnerMenuForm(runnerId));
                         break;
                     case "C":
-                        Program.MoveToForm<CoordinatorMenuForm>(this);
+                        Program.GoToForm<CoordinatorMenuForm>(this);
                         break;
                 }
             }
@@ -46,7 +46,7 @@ namespace Marathon_Skills.Forms
 
         private void Back(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
     }
 }

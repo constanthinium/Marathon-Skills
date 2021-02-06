@@ -37,7 +37,7 @@ namespace Marathon_Skills.Forms
 
         private void roundedButton5_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<RegisterAsARunnerForm>(this);
+            Program.GoToForm<RegisterAsARunnerForm>(this);
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
@@ -77,21 +77,31 @@ namespace Marathon_Skills.Forms
             }
             else if (dateTimePicker1.Value.AddYears(10) > DateTime.Now)
             {
-                MessageBox.Show("Вам должны быть не меньше 10 лет");
+                MessageBox.Show("Вам должно быть не меньше 10 лет");
                 return;
             }
 
-            var command = new SqlCommand($@"
+            var command = placeholderTextBox6.Text != "" ? new SqlCommand($@"
 insert into [User] (Email, Password, FirstName, LastName, RoleId)
 values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
+
 insert into Runner (Email, Gender, DateOfBirth, CountryCode, PicturePath)
 output inserted.RunnerId
 values ('{placeholderTextBox1.Text}', '{comboBox1.SelectedValue}', '{dateTimePicker1.Value}',
-(select CountryCode from Country where CountryName = '{comboBox2.SelectedValue}'), {(placeholderTextBox6.Text != "" ? '\'' + placeholderTextBox6.Text + '\'' : null)})
+(select CountryCode from Country where CountryName = '{comboBox2.SelectedValue}'), null)
+            ", _con) : new SqlCommand($@"
+insert into [User] (Email, Password, FirstName, LastName, RoleId)
+values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
+
+insert into Runner (Email, Gender, DateOfBirth, CountryCode, PicturePath)
+output inserted.RunnerId
+values ('{placeholderTextBox1.Text}', '{comboBox1.SelectedValue}', '{dateTimePicker1.Value}',
+(select CountryCode from Country where CountryName = '{comboBox2.SelectedValue}'), '{placeholderTextBox6.Text}')
             ", _con);
+
             var runnerId = (int)command.ExecuteScalar();
 
-            Program.MoveToForm(this, new RegisterForAnEventForm(runnerId));
+            Program.GoToForm(this, new RegisterForAnEventForm(runnerId));
         }
 
         private static bool ValidateEmail(string address)

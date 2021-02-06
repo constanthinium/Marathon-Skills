@@ -17,22 +17,22 @@ namespace Marathon_Skills.Forms
             if (MessageBox.Show("Загрузка может продлиться до 30 секунд. Продолжить?", "Долгая загрузка",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) != DialogResult.OK) return;
             Cursor.Current = Cursors.WaitCursor;
-            Program.MoveToForm<SponsorForm>(this);
+            Program.GoToForm<SponsorForm>(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<RegisterAsARunnerForm>(this);
+            Program.GoToForm<RegisterAsARunnerForm>(this);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<DetailedInformationForm>(this);
+            Program.GoToForm<DetailedInformationForm>(this);
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<AuthorizationForm>(this);
+            Program.GoToForm<AuthorizationForm>(this);
         }
     }
 }

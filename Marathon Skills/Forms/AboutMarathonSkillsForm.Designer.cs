@@ -137,6 +137,7 @@ namespace Marathon_Skills.Forms
             this.button1.TabIndex = 51;
             this.button1.Text = "Карта марафона\r\n(Нажмите, чтобы открыть\r\nинтерактивную карту)";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 

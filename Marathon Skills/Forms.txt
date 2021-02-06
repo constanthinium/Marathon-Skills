@@ -1,49 +1,51 @@
-﻿MainForm - 1.6 (1)
-SponsorForm - 1.7 (6)
-SponsorConfirmForm - 1.8 (7)
-DetailedInformationForm - 1.9 (10)
-CharityOrganisationsForm - 1.10 (13)
-AuthorizationForm - 1.11 (3)
-RunnerMenuForm - 1.12 (9)
-CoordinatorMenuForm - 1.13 (19)
-AdministratorMenuForm - 1.14 (20)
-RunnerMenuForm - 1.15 (9)
-RegisterAsARunnerForm - 1.16 (2)
+﻿//
+// С1
 //
+MainForm - 1.6 (1)						+
+SponsorForm - 1.7 (6)					-к
+SponsorConfirmForm - 1.8 (7)			+
+DetailedInformationForm - 1.9 (10)		-м
+CharityOrganisationsForm - 1.10 (13)	+
+AuthorizationForm - 1.11 (3)			+
+RunnerMenuForm - 1.12 (9)				-м
+CoordinatorMenuForm - 1.13 (19)			+
+AdministratorMenuForm - 1.14 (20)		-м
+RegisterAsARunnerForm - 1.16 (2)		+
 //
+// C2
 //
-RegisterAsARunnerForm2 - 2.1 (4)
-RegisterForAnEventForm - 2.2 (5)
-RunnerConfirmForm - 2.3 (8)
-EditRunnerProfileForm - 2.4 (16)
-MyRaceResultsForm - 2.5 (17)
-HowLongMarathonForm - 2.6 (15)
-AboutMarathonSkillsForm - 2.7 (11)
-InventoryForm - 2.8 (35)
-InventoryForm2 - 2.9 (36)
+RegisterAsARunnerForm2 - 2.1 (4)		- фото пользователя некорректно записывается
+RegisterForAnEventForm - 2.2 (5)		+
+RunnerConfirmForm - 2.3 (8)				+
+EditRunnerProfileForm - 2.4 (16)		+
+MyRaceResultsForm - 2.5 (17)			+
+HowLongMarathonForm - 2.6 (15)			+
+AboutMarathonSkillsForm - 2.7 (11)		+
+InventoryForm - 2.8 (35)				-
+InventoryForm2 - 2.9 (36)				-
 //
+// C3
 //
+InteractiveMapForm - 3.1 (12)			-
+ManageChariForm - 3.2 (26)				-
+AddEditCharityForm - 3.3 (27)			-
+VoluntererManagementForm - 3.4 (28)		-
+ImportVolunteersForm - 3.5 (29)			-
+MySponsorshipForm - 3.6 (18)			-
 //
-InteractiveMapForm - 3.1 (12)
-ManageChariForm - 3.2 (26)
-AddEditCharityForm - 3.3 (27)
-VoluntererManagementForm - 3.4 (28)
-ImportVolunteersForm - 3.5 (29)
-MySponsorshipForm - 3.6 (18)
+// C4
 //
+PreviousRaceResultsForm - 4.1 (14)		-
+RunnerManagementForm - 4.2 (22)			-
+SponsorOverviewForm - 4.5 (21)			-
+BMICalculatorForm - 4.6 (33)			-
+BMRCalculatorForm - 4.7 (34)			-
 //
+// C5
 //
-PreviousRaceResultsForm - 4.1 (14)
-RunnerManagementForm - 4.2 (22)
-SponsorOverviewForm - 4.5 (21)
-BMICalculatorForm - 4.6 (33)
-BMRCalculatorForm - 4.7 (34)
-//
-//
-//
-ManageARunnerForm - 5.3 (23)
-EditRunnerProfileForm2 - 5.4 (24)
-CertificatePreviewForm - 5.5 (25)
-UserManagementForm - 5.6 (30)
-EditAUserForm - 5.7 (31)
-AddANewUserForm - 5.8 (32)
+ManageARunnerForm - 5.3 (23)			-
+EditRunnerProfileForm2 - 5.4 (24)		-
+CertificatePreviewForm - 5.5 (25)		-
+UserManagementForm - 5.6 (30)			-
+EditAUserForm - 5.7 (31)				-
+AddANewUserForm - 5.8 (32)				-

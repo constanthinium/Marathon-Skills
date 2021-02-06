@@ -13,17 +13,17 @@ namespace Marathon_Skills.Forms
 
         private void roundedButton5_Click(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
 
         private void roundedButton1_Click(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<AboutMarathonSkillsForm>(this);
+            Program.GoToForm<AboutMarathonSkillsForm>(this);
         }
 
         private void roundedButton2_Click(object sender, System.EventArgs e)
         {
-            Program.MoveToForm<HowLongMarathonForm>(this);
+            Program.GoToForm<HowLongMarathonForm>(this);
         }
     }
 }

@@ -50,5 +50,10 @@ namespace Marathon_Skills.Forms
                 });
             }
         }
+
+        private void roundedButton5_Click(object sender, System.EventArgs e)
+        {
+            Program.GoToForm<DetailedInformationForm>(this);
+        }
     }
 }

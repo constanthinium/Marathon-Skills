@@ -53,6 +53,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace Marathon_Skills.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.roundedButton1);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.roundedButton5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -113,14 +115,14 @@ namespace Marathon_Skills.Forms
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.label14.Location = new System.Drawing.Point(611, 348);
+            this.label14.Location = new System.Drawing.Point(533, 348);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 45);
+            this.label14.Size = new System.Drawing.Size(247, 45);
             this.label14.TabIndex = 46;
             this.label14.Text = "$185";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label13
             // 
@@ -335,6 +337,17 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton1.Location = new System.Drawing.Point(713, 12);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton1.TabIndex = 28;
+            this.roundedButton1.Text = "Logout";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            // 
             // RegisterForAnEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,5 +415,6 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
+        private Controls.RoundedButton roundedButton1;
     }
 }

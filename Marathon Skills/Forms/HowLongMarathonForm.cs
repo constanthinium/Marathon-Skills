@@ -65,7 +65,7 @@ namespace Marathon_Skills.Forms
 
         private static string GetDistanceDescription(string what, float length)
         {
-            return $"{what} длиной {length} и может поместиться на длину марафона {(int)(42_000 / length)} раз";
+            return $"{what} длиной {length} метров и может поместиться на длину марафона {(int)(42_000 / length)} раз";
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace Marathon_Skills.Forms
 
         private void roundedButton5_Click(object sender, EventArgs e)
         {
-            Program.MoveToForm<DetailedInformationForm>(this);
+            Program.GoToForm<DetailedInformationForm>(this);
         }
     }
 }

@@ -53,12 +53,12 @@ where RaceTime is not null and left(convert(varchar, cast(dateadd(s, RaceTime, 0
 
         private void BackOk(object sender, EventArgs e)
         {
-            Program.MoveToForm(this, new RunnerMenuForm(_runnerId));
+            Program.GoToForm(this, new RunnerMenuForm(_runnerId));
         }
 
         private void Logout(object sender, EventArgs e)
         {
-            Program.MoveToForm<MainForm>(this);
+            Program.GoToForm<MainForm>(this);
         }
     }
 }

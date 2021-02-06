@@ -18,7 +18,7 @@ namespace Marathon_Skills.Forms
 
         private void Back(object sender, EventArgs e)
         {
-            Program.MoveToForm<SponsorForm>(this);
+            Program.GoToForm<SponsorForm>(this);
         }
     }
 }
