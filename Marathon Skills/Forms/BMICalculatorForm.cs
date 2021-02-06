@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Marathon_Skills.Forms
@@ -36,7 +29,7 @@ namespace Marathon_Skills.Forms
 
         private void placeholderTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar))
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == '.'))
             {
                 e.Handled = true;
             }
@@ -78,25 +71,23 @@ namespace Marathon_Skills.Forms
                 return;
             }
 
-            if (currentGender == "male")
+            currentBMI = Convert.ToDouble(placeholderTextBox2.Text) / (Convert.ToDouble(placeholderTextBox1.Text) * Convert.ToDouble(placeholderTextBox1.Text));
+
+            if (currentBMI < 18.5)
             {
-                currentBMI = 
-                label14.Text = currentBMR.ToString();
-                label13.Text = (currentBMR * 1.2).ToString();
-                label17.Text = (currentBMR * 1.375).ToString();
-                label19.Text = (currentBMR * 1.55).ToString();
-                label21.Text = (currentBMR * 1.725).ToString();
-                label23.Text = (currentBMR * 1.9).ToString();
+                pictureBox1.Image = Properties.Resources.bmi_underweight_icon;
             }
-            else if (currentGender == "female")
+            else if (currentBMI > 18.5 && currentBMI < 24.9)
             {
-                currentBMR = 655 + (9.6 * Convert.ToDouble(placeholderTextBox2.Text)) + (1.8 * Convert.ToDouble(placeholderTextBox1.Text)) - (4.7 * Convert.ToDouble(placeholderTextBox3.Text));
-                label14.Text = currentBMR.ToString();
-                label13.Text = (currentBMR * 1.2).ToString();
-                label17.Text = (currentBMR * 1.375).ToString();
-                label19.Text = (currentBMR * 1.55).ToString();
-                label21.Text = (currentBMR * 1.725).ToString();
-                label23.Text = (currentBMR * 1.9).ToString();
+                pictureBox1.Image = Properties.Resources.bmi_healthy_icon;
+            }
+            else if (currentBMI > 25 && currentBMI < 29.9)
+            {
+                pictureBox1.Image = Properties.Resources.bmi_overweight_icon;
+            }
+            else if (currentBMI > 30)
+            {
+                pictureBox1.Image = Properties.Resources.bmi_obese_icon;
             }
         }
     }

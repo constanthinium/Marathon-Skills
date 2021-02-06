@@ -27,7 +27,7 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            GoToForm<SponsorForm>(null);
+            GoToForm<BMICalculatorForm>(null);
 
             Application.Run(dispatcherForm);
         }

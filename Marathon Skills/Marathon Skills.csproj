@@ -472,6 +472,10 @@
     <Content Include="Images\wwsm-rescue-logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\bmi-obese-icon.png" />
+    <None Include="Resources\bmi-overweight-icon.png" />
+    <None Include="Resources\bmi-underweight-icon.png" />
+    <None Include="Resources\bmi-healthy-icon.png" />
     <None Include="Resources\male-icon.png" />
     <None Include="Resources\female-icon.png" />
     <None Include="Resources\worm.jpg" />

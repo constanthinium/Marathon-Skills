@@ -38,7 +38,7 @@ MySponsorshipForm - 3.6 (18)			-
 PreviousRaceResultsForm - 4.1 (14)		-
 RunnerManagementForm - 4.2 (22)			-
 SponsorOverviewForm - 4.5 (21)			-
-BMICalculatorForm - 4.6 (33)			-
+BMICalculatorForm - 4.6 (33)			+ добавить шкалу веса
 BMRCalculatorForm - 4.7 (34)			+ доделать кнопку информации
 //
 // C5
