@@ -62,9 +62,9 @@ namespace Marathon_Skills.Forms
             }
             else if (!(
                 placeholderTextBox2.Text.Length >= 6 &&
-                placeholderTextBox2.Text.Any(c => char.IsUpper(c)) &&
-                placeholderTextBox2.Text.Any(c => char.IsDigit(c)) &&
-                placeholderTextBox2.Text.Any(c => char.IsPunctuation(c))
+                placeholderTextBox2.Text.Any(char.IsUpper) &&
+                placeholderTextBox2.Text.Any(char.IsDigit) &&
+                placeholderTextBox2.Text.Any(char.IsPunctuation)
                 ))
             {
                 MessageBox.Show("Неподходящий пароль");
