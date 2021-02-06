@@ -28,7 +28,7 @@ namespace Marathon_Skills.Forms
             if (!_disableLongQueries)
             {
                 var adapter = new SqlDataAdapter(@"
-select concat(FirstName, ', ', LastName, ' - ', BibNumber, ' (', Runner.CountryCode, ')') as Runner
+select concat(FirstName, ', ', LastName, ' - ', BibNumber, ' (', Runner.CountryCode, ')') as Runner, Runner.RunnerId
 from Runner
 join [User] on Runner.Email = [User].Email
 join Registration on Runner.RunnerId = Registration.RunnerId
@@ -40,7 +40,8 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 adapter.Fill(set);
 
                 comboBox1.DataSource = set.Tables[0];
-                comboBox1.ValueMember = "Runner";
+                comboBox1.ValueMember = "RunnerId";
+                comboBox1.DisplayMember = "Runner";
             }
             else
                 comboBox1.Items.Add("Ahmad, Adkin - 1518 (IRL)");
@@ -75,13 +76,15 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
                 return;
             }
 
-            // TODO: ну что-нибудь надо сюда вставить уж точно
-            //new SqlCommand("insert into Sponsorship (SponsorName, RegistrationId, Amount)" +
-            //               $"values '{textBox2.Text}', СЮДА-ТО ЧТО БЛЯТЬ ВСТАВЛЯТЬ, '{label14.Text.Substring(0, label14.Text.Length - 1)}'", _con)
-            //    .ExecuteNonQuery();
+            var cmd = new SqlCommand($@"
+insert into Sponsorship (SponsorName, RegistrationId, Amount)
+values ('{textBox2.Text}', (select RegistrationId from Registration where RunnerId = {comboBox1.SelectedValue}), 
+{label14.Text.Substring(1)})",
+                _con);
+                cmd.ExecuteNonQuery();
 
             Program.GoToForm(this, new SponsorConfirmForm(
-                (comboBox1.SelectedValue ?? comboBox1.SelectedItem).ToString(), comboBox2.SelectedValue.ToString(), label14.Text));
+                comboBox1.Text, comboBox2.SelectedValue.ToString(), label14.Text));
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
@@ -100,6 +103,9 @@ join RegistrationEvent on Registration.RegistrationId = RegistrationEvent.Regist
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+                textBox1.Text = "0";
+
             var amount = int.Parse(textBox1.Text);
 
             if (amount < 10)

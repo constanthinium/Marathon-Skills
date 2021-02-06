@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Marathon_Skills.Forms;
 
@@ -25,8 +27,7 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            GoToForm<BMRCalculatorForm>(null);
-            //GoToForm(null, new EditRunnerProfileForm(100));
+            GoToForm<SponsorForm>(null);
 
             Application.Run(dispatcherForm);
         }

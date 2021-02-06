@@ -2,7 +2,7 @@
 // С1
 //
 MainForm - 1.6 (1)						+
-SponsorForm - 1.7 (6)					-к
+SponsorForm - 1.7 (6)					+
 SponsorConfirmForm - 1.8 (7)			+
 DetailedInformationForm - 1.9 (10)		+
 CharityOrganisationsForm - 1.10 (13)	+

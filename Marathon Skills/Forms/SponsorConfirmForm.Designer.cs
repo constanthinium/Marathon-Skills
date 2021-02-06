@@ -124,7 +124,6 @@ namespace Marathon_Skills.Forms
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(245, 163);
@@ -132,6 +131,7 @@ namespace Marathon_Skills.Forms
             this.label3.Size = new System.Drawing.Size(330, 27);
             this.label3.TabIndex = 21;
             this.label3.Text = "Иван Прудов (204) из Russia";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label14
             // 
@@ -146,7 +146,6 @@ namespace Marathon_Skills.Forms
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.label13.Location = new System.Drawing.Point(317, 216);
@@ -154,6 +153,7 @@ namespace Marathon_Skills.Forms
             this.label13.Size = new System.Drawing.Size(177, 32);
             this.label13.TabIndex = 22;
             this.label13.Text = "Фонд кошек";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // roundedButton1
             // 
