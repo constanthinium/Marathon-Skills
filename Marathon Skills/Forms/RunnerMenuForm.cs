@@ -24,5 +24,10 @@ namespace Marathon_Skills.Forms
         {
             Program.MoveToForm(this, new RegisterForAnEventForm(_runnerId));
         }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            Program.MoveToForm(this, new MyRaceResultsForm(_runnerId));
+        }
     }
 }
