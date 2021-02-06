@@ -4,12 +4,12 @@
 MainForm - 1.6 (1)						+
 SponsorForm - 1.7 (6)					-к
 SponsorConfirmForm - 1.8 (7)			+
-DetailedInformationForm - 1.9 (10)		-м
+DetailedInformationForm - 1.9 (10)		+
 CharityOrganisationsForm - 1.10 (13)	+
 AuthorizationForm - 1.11 (3)			+
-RunnerMenuForm - 1.12 (9)				-м
+RunnerMenuForm - 1.12 (9)				+
 CoordinatorMenuForm - 1.13 (19)			+
-AdministratorMenuForm - 1.14 (20)		-м
+AdministratorMenuForm - 1.14 (20)		+
 RegisterAsARunnerForm - 1.16 (2)		+
 //
 // C2
@@ -39,7 +39,7 @@ PreviousRaceResultsForm - 4.1 (14)		-
 RunnerManagementForm - 4.2 (22)			-
 SponsorOverviewForm - 4.5 (21)			-
 BMICalculatorForm - 4.6 (33)			-
-BMRCalculatorForm - 4.7 (34)			-
+BMRCalculatorForm - 4.7 (34)			+ доделать кнопку информации
 //
 // C5
 //

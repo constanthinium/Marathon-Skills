@@ -147,6 +147,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.TabIndex = 29;
             this.roundedButton3.Text = "Предыдущие результаты";
             this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton4
             // 
@@ -159,6 +160,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton4.TabIndex = 30;
             this.roundedButton4.Text = "Список благотворительных акций";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton6
             // 
@@ -171,6 +173,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton6.TabIndex = 31;
             this.roundedButton6.Text = "BMI калькулятор";
             this.roundedButton6.UseVisualStyleBackColor = false;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton7
             // 
@@ -183,6 +186,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton7.TabIndex = 32;
             this.roundedButton7.Text = "BMR калькулятор";
             this.roundedButton7.UseVisualStyleBackColor = false;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // DetailedInformationForm
             // 

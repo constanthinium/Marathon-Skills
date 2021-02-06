@@ -34,8 +34,6 @@ namespace Marathon_Skills.Forms
             this.label15 = new System.Windows.Forms.Label();
             this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.placeholderTextBox2 = new Marathon_Skills.Controls.PlaceholderTextBox();
@@ -46,12 +44,14 @@ namespace Marathon_Skills.Forms
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +97,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // label3
             // 
@@ -108,22 +109,6 @@ namespace Marathon_Skills.Forms
             this.label3.TabIndex = 96;
             this.label3.Tag = "";
             this.label3.Text = "Информация о том что такое BMI и\r\nкак калькулятор работает";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(30, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 104);
-            this.button1.TabIndex = 97;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(151, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 104);
-            this.button2.TabIndex = 98;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -155,6 +140,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox2.Placeholder = "";
             this.placeholderTextBox2.Size = new System.Drawing.Size(94, 20);
             this.placeholderTextBox2.TabIndex = 100;
+            this.placeholderTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.placeholderTextBox2_KeyPress);
             // 
             // placeholderTextBox1
             // 
@@ -164,6 +150,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox1.Placeholder = "";
             this.placeholderTextBox1.Size = new System.Drawing.Size(94, 20);
             this.placeholderTextBox1.TabIndex = 99;
+            this.placeholderTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.placeholderTextBox1_KeyPress);
             // 
             // label5
             // 
@@ -195,6 +182,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton3.TabIndex = 107;
             this.roundedButton3.Text = "Отмена";
             this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton2
             // 
@@ -204,6 +192,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 106;
             this.roundedButton2.Text = "Расчитать";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // panel2
             // 
@@ -226,14 +215,6 @@ namespace Marathon_Skills.Forms
             this.label10.TabIndex = 1;
             this.label10.Text = "18 дней 8 часов и 17 минут до старта марафона!";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(360, 360);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(376, 34);
-            this.pictureBox2.TabIndex = 109;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(569, 102);
@@ -242,13 +223,36 @@ namespace Marathon_Skills.Forms
             this.pictureBox1.TabIndex = 105;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Marathon_Skills.Properties.Resources.female_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(142, 158);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 89);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 133;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Marathon_Skills.Properties.Resources.male_icon;
+            this.pictureBox4.Location = new System.Drawing.Point(30, 158);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 89);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 132;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // BMICalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.roundedButton3);
             this.Controls.Add(this.roundedButton2);
@@ -259,8 +263,6 @@ namespace Marathon_Skills.Forms
             this.Controls.Add(this.label4);
             this.Controls.Add(this.placeholderTextBox2);
             this.Controls.Add(this.placeholderTextBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -273,8 +275,9 @@ namespace Marathon_Skills.Forms
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,8 +290,6 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.Label label15;
         private Controls.RoundedButton roundedButton5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private Controls.PlaceholderTextBox placeholderTextBox2;
@@ -300,6 +301,7 @@ namespace Marathon_Skills.Forms
         private Controls.RoundedButton roundedButton2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

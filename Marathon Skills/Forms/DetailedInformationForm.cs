@@ -25,5 +25,25 @@ namespace Marathon_Skills.Forms
         {
             Program.GoToForm<HowLongMarathonForm>(this);
         }
+
+        private void roundedButton3_Click(object sender, System.EventArgs e)
+        {
+            Program.GoToForm<PreviousRaceResultsForm>(this);
+        }
+
+        private void roundedButton4_Click(object sender, System.EventArgs e)
+        {
+            Program.GoToForm<CharityOrganisationsForm>(this);
+        }
+
+        private void roundedButton6_Click(object sender, System.EventArgs e)
+        {
+            Program.GoToForm<BMICalculatorForm>(this);
+        }
+
+        private void roundedButton7_Click(object sender, System.EventArgs e)
+        {
+            Program.GoToForm<BMRCalculatorForm>(this);
+        }
     }
 }

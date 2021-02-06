@@ -30,7 +30,9 @@ namespace Marathon_Skills.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
             this.label15 = new System.Windows.Forms.Label();
+            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -50,8 +52,6 @@ namespace Marathon_Skills.Forms
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.placeholderTextBox1 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.placeholderTextBox4 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
@@ -60,8 +60,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox6 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.placeholderTextBox3 = new Marathon_Skills.Controls.PlaceholderTextBox();
             this.placeholderTextBox2 = new Marathon_Skills.Controls.PlaceholderTextBox();
-            this.roundedButton4 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +78,18 @@ namespace Marathon_Skills.Forms
             this.panel1.Size = new System.Drawing.Size(800, 50);
             this.panel1.TabIndex = 19;
             // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton4.Location = new System.Drawing.Point(697, 12);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton4.TabIndex = 28;
+            this.roundedButton4.Text = "Logout";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.Logout);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -89,6 +100,18 @@ namespace Marathon_Skills.Forms
             this.label15.Size = new System.Drawing.Size(401, 37);
             this.label15.TabIndex = 27;
             this.label15.Text = "MARATHON SKILLS 2016";
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton5.TabIndex = 1;
+            this.roundedButton5.Text = "Назад";
+            this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.Cancel);
             // 
             // panel2
             // 
@@ -131,7 +154,7 @@ namespace Marathon_Skills.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(628, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(628, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -290,27 +313,6 @@ namespace Marathon_Skills.Forms
             this.label12.TabIndex = 94;
             this.label12.Text = "Оставьте эти поля, незаполненными,\r\nесли вы не хотите изменять пароль.";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(106, 329);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(198, 29);
-            this.comboBox3.TabIndex = 96;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(106, 304);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(225, 22);
-            this.label16.TabIndex = 95;
-            this.label16.Tag = "";
-            this.label16.Text = "Регистрационный статус";
-            // 
             // placeholderTextBox1
             // 
             this.placeholderTextBox1.ForeColor = System.Drawing.Color.Gray;
@@ -393,48 +395,16 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox2.TabIndex = 73;
             this.placeholderTextBox2.Text = "Имя";
             // 
-            // roundedButton4
+            // comboBox3
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton4.Location = new System.Drawing.Point(697, 12);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton4.TabIndex = 28;
-            this.roundedButton4.Text = "Logout";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            this.roundedButton4.Click += new System.EventHandler(this.Logout);
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton5.TabIndex = 1;
-            this.roundedButton5.Text = "Назад";
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            this.roundedButton5.Click += new System.EventHandler(this.Cancel);
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton5.Location = new System.Drawing.Point(12, 12);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton5.TabIndex = 1;
-            this.roundedButton5.Text = "Назад";
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(628, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 104);
-            this.pictureBox1.TabIndex = 77;
-            this.pictureBox1.TabStop = false;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(48, 341);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(198, 29);
+            this.comboBox3.TabIndex = 123;
+            this.comboBox3.Visible = false;
             // 
             // EditRunnerProfileForm
             // 
@@ -443,7 +413,6 @@ namespace Marathon_Skills.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.placeholderTextBox1);
@@ -520,6 +489,5 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.Label label12;
         private Controls.RoundedButton roundedButton4;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label16;
     }
 }

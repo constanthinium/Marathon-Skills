@@ -25,8 +25,8 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            GoToForm<AboutMarathonSkillsForm>(null);
-            //GoToForm(null, new MyRaceResultsForm(100));
+            GoToForm<BMRCalculatorForm>(null);
+            //GoToForm(null, new EditRunnerProfileForm(100));
 
             Application.Run(dispatcherForm);
         }

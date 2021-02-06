@@ -46,5 +46,10 @@ namespace Marathon_Skills.Forms
         {
             Program.GoToForm<MainForm>(this);
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            Program.GoToForm<MainForm>(this);
+        }
     }
 }

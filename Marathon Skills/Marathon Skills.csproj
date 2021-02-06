@@ -472,6 +472,8 @@
     <Content Include="Images\wwsm-rescue-logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\male-icon.png" />
+    <None Include="Resources\female-icon.png" />
     <None Include="Resources\worm.jpg" />
     <None Include="Resources\slug.jpg" />
     <None Include="Resources\sloth.jpg" />

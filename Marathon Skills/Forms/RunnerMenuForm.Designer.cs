@@ -30,6 +30,7 @@ namespace Marathon_Skills.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.roundedButton7 = new Marathon_Skills.Controls.RoundedButton();
             this.label15 = new System.Windows.Forms.Label();
             this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,7 +41,6 @@ namespace Marathon_Skills.Forms
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundedButton7 = new Marathon_Skills.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,17 @@ namespace Marathon_Skills.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 50);
             this.panel1.TabIndex = 19;
+            // 
+            // roundedButton7
+            // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.roundedButton7.Location = new System.Drawing.Point(713, 9);
+            this.roundedButton7.Name = "roundedButton7";
+            this.roundedButton7.Size = new System.Drawing.Size(75, 23);
+            this.roundedButton7.TabIndex = 28;
+            this.roundedButton7.Text = "Logout";
+            this.roundedButton7.UseVisualStyleBackColor = false;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // label15
             // 
@@ -77,6 +88,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -174,17 +186,6 @@ namespace Marathon_Skills.Forms
             this.label1.Size = new System.Drawing.Size(156, 27);
             this.label1.TabIndex = 33;
             this.label1.Text = "Меню бегуна";
-            // 
-            // roundedButton7
-            // 
-            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.roundedButton7.Location = new System.Drawing.Point(713, 9);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(75, 23);
-            this.roundedButton7.TabIndex = 28;
-            this.roundedButton7.Text = "Logout";
-            this.roundedButton7.UseVisualStyleBackColor = false;
-            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // RunnerMenuForm
             // 
