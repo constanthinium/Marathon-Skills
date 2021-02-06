@@ -134,6 +134,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 28;
             this.roundedButton2.Text = "Насколько долгий марафон";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton3
             // 
