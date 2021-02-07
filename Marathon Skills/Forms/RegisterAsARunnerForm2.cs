@@ -11,9 +11,6 @@ namespace Marathon_Skills.Forms
     {
         private readonly SqlConnection _con = new SqlConnection(Program.ConnectionString);
 
-        private SqlDataAdapter _adapter;
-        private DataSet _set;
-
         public RegisterAsARunnerForm2()
         {
             InitializeComponent();
@@ -22,16 +19,16 @@ namespace Marathon_Skills.Forms
 
             _con.Open();
 
-            _adapter = new SqlDataAdapter("select Gender from Gender", _con);
-            _set = new DataSet();
-            _adapter.Fill(_set);
-            comboBox1.DataSource = _set.Tables[0];
+            var adapter = new SqlDataAdapter("select Gender from Gender", _con);
+            var table = new DataTable();
+            adapter.Fill(table);
+            comboBox1.DataSource = table;
             comboBox1.ValueMember = "Gender";
 
             var adapter2 = new SqlDataAdapter("select CountryName from Country", _con);
-            var set2 = new DataSet();
-            adapter2.Fill(set2);
-            comboBox2.DataSource = set2.Tables[0];
+            var table2 = new DataTable();
+            adapter2.Fill(table2);
+            comboBox2.DataSource = table2;
             comboBox2.ValueMember = "CountryName";
         }
 
@@ -81,7 +78,7 @@ namespace Marathon_Skills.Forms
                 return;
             }
 
-            var command = placeholderTextBox6.Text != "" ? new SqlCommand($@"
+            var command = placeholderTextBox6.Text == "" ? new SqlCommand($@"
 insert into [User] (Email, Password, FirstName, LastName, RoleId)
 values ('{placeholderTextBox1.Text}', '{placeholderTextBox2.Text}', '{placeholderTextBox4.Text}', '{placeholderTextBox5.Text}', 'R')
 

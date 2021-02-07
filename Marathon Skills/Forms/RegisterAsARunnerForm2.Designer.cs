@@ -226,7 +226,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox1.Placeholder = "Email";
             this.placeholderTextBox1.Size = new System.Drawing.Size(198, 20);
             this.placeholderTextBox1.TabIndex = 48;
-            this.placeholderTextBox1.Text = "Email";
+            this.placeholderTextBox1.Text = "a@a.a";
             // 
             // placeholderTextBox2
             // 
@@ -236,7 +236,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox2.Placeholder = "Пароль";
             this.placeholderTextBox2.Size = new System.Drawing.Size(198, 20);
             this.placeholderTextBox2.TabIndex = 49;
-            this.placeholderTextBox2.Text = "Пароль";
+            this.placeholderTextBox2.Text = "Aaaaaaaaaa!.0";
             // 
             // placeholderTextBox3
             // 
@@ -246,7 +246,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox3.Placeholder = "Повторите пароль";
             this.placeholderTextBox3.Size = new System.Drawing.Size(198, 20);
             this.placeholderTextBox3.TabIndex = 50;
-            this.placeholderTextBox3.Text = "Повторите пароль";
+            this.placeholderTextBox3.Text = "Aaaaaaaaaa!.0";
             // 
             // placeholderTextBox4
             // 
@@ -256,7 +256,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox4.Placeholder = "Имя";
             this.placeholderTextBox4.Size = new System.Drawing.Size(198, 20);
             this.placeholderTextBox4.TabIndex = 51;
-            this.placeholderTextBox4.Text = "Имя";
+            this.placeholderTextBox4.Text = "aaaaaaaa";
             // 
             // placeholderTextBox5
             // 
@@ -266,7 +266,7 @@ namespace Marathon_Skills.Forms
             this.placeholderTextBox5.Placeholder = "Фамилия";
             this.placeholderTextBox5.Size = new System.Drawing.Size(198, 20);
             this.placeholderTextBox5.TabIndex = 52;
-            this.placeholderTextBox5.Text = "Фамилия";
+            this.placeholderTextBox5.Text = "aaaaaaaaa";
             // 
             // pictureBox1
             // 

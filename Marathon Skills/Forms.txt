@@ -14,7 +14,7 @@ RegisterAsARunnerForm - 1.16 (2)		+
 //
 // C2
 //
-RegisterAsARunnerForm2 - 2.1 (4)		- фото пользователя некорректно записывается
+RegisterAsARunnerForm2 - 2.1 (4)		+
 RegisterForAnEventForm - 2.2 (5)		+
 RunnerConfirmForm - 2.3 (8)				+
 EditRunnerProfileForm - 2.4 (16)		+
