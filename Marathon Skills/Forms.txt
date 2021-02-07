@@ -46,6 +46,6 @@ BMRCalculatorForm - 4.7 (34)			+ доделать кнопку информац�
 ManageARunnerForm - 5.3 (23)			-
 EditRunnerProfileForm2 - 5.4 (24)		-
 CertificatePreviewForm - 5.5 (25)		-
-UserManagementForm - 5.6 (30)			-
+UserManagementForm - 5.6 (30)			+
 EditAUserForm - 5.7 (31)				-
 AddANewUserForm - 5.8 (32)				-

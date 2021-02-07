@@ -12,7 +12,7 @@ namespace Marathon_Skills.Forms
 {
     public partial class EditAUserForm : Form
     {
-        public EditAUserForm()
+        public EditAUserForm(string emailId)
         {
             InitializeComponent();
         }

@@ -34,7 +34,6 @@ namespace Marathon_Skills.Forms
             this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@ namespace Marathon_Skills.Forms
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -83,6 +83,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 108;
             this.roundedButton2.Text = "+ Добавление нового";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
@@ -93,6 +94,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 107;
             this.roundedButton1.Text = "Обновить";
             this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // label3
             // 
@@ -104,16 +106,6 @@ namespace Marathon_Skills.Forms
             this.label3.TabIndex = 106;
             this.label3.Tag = "";
             this.label3.Text = "Поиск:";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(574, 176);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(198, 29);
-            this.comboBox3.TabIndex = 105;
             // 
             // label2
             // 
@@ -179,6 +171,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton4.TabIndex = 28;
             this.roundedButton4.Text = "Logout";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // label15
             // 
@@ -201,6 +194,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -236,11 +230,23 @@ namespace Marathon_Skills.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 254);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(776, 140);
             this.dataGridView1.TabIndex = 115;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(575, 182);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(197, 20);
+            this.textBox1.TabIndex = 116;
             // 
             // UserManagementForm
             // 
@@ -248,6 +254,7 @@ namespace Marathon_Skills.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -257,7 +264,6 @@ namespace Marathon_Skills.Forms
             this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label7);
@@ -284,7 +290,6 @@ namespace Marathon_Skills.Forms
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label7;
@@ -297,5 +302,6 @@ namespace Marathon_Skills.Forms
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
