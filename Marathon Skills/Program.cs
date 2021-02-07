@@ -1,10 +1,8 @@
-﻿using System;
+﻿using Marathon_Skills.Forms;
+using System;
 using System.Collections.ObjectModel;
 using System.Drawing;
-using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Marathon_Skills.Forms;
 
 namespace Marathon_Skills
 {
@@ -27,7 +25,7 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            GoToForm<BMICalculatorForm>(null);
+            GoToForm<ManageChariForm>(null);
 
             Application.Run(dispatcherForm);
         }
