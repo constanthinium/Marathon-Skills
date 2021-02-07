@@ -94,6 +94,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton4.TabIndex = 90;
             this.roundedButton4.Text = "Logout";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // label15
             // 
@@ -116,6 +117,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -179,6 +181,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton1.TabIndex = 81;
             this.roundedButton1.Text = "Загрузка волонтеров";
             this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedButton2
             // 
@@ -189,6 +192,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton2.TabIndex = 82;
             this.roundedButton2.Text = "Обновить";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // label11
             // 
@@ -214,11 +218,15 @@ namespace Marathon_Skills.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 261);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 254);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(742, 133);
-            this.dataGridView1.TabIndex = 96;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 140);
+            this.dataGridView1.TabIndex = 116;
             // 
             // VoluntererManagementForm
             // 
