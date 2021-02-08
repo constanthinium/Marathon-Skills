@@ -25,7 +25,7 @@ namespace Marathon_Skills
                     Application.Exit();
             };
 
-            GoToForm(null, new ManageARunnerForm(123));
+            GoToForm(null, new AddEditCharityForm(1));
 
             Application.Run(dispatcherForm);
         }
