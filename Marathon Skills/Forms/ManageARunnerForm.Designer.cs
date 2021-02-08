@@ -35,9 +35,6 @@ namespace Marathon_Skills.Forms
             this.roundedButton5 = new Marathon_Skills.Controls.RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
-            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +53,6 @@ namespace Marathon_Skills.Forms
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -65,17 +61,21 @@ namespace Marathon_Skills.Forms
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.roundedButton1 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton3 = new Marathon_Skills.Controls.RoundedButton();
+            this.roundedButton2 = new Marathon_Skills.Controls.RoundedButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,6 +100,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton4.TabIndex = 28;
             this.roundedButton4.Text = "Logout";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // label15
             // 
@@ -122,6 +123,7 @@ namespace Marathon_Skills.Forms
             this.roundedButton5.TabIndex = 1;
             this.roundedButton5.Text = "Назад";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // panel2
             // 
@@ -143,36 +145,6 @@ namespace Marathon_Skills.Forms
             this.label10.Size = new System.Drawing.Size(490, 24);
             this.label10.TabIndex = 1;
             this.label10.Text = "18 дней 8 часов и 17 минут до старта марафона!";
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton3.Location = new System.Drawing.Point(12, 352);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(189, 42);
-            this.roundedButton3.TabIndex = 100;
-            this.roundedButton3.Text = "E-mail список";
-            this.roundedButton3.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton2.Location = new System.Drawing.Point(599, 352);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(189, 42);
-            this.roundedButton2.TabIndex = 99;
-            this.roundedButton2.Text = "Детальной информация\r\n(CSV)";
-            this.roundedButton2.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roundedButton1.Location = new System.Drawing.Point(301, 352);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(165, 42);
-            this.roundedButton1.TabIndex = 101;
-            this.roundedButton1.Text = "Детальной информация\r\n(CSV)";
-            this.roundedButton1.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -379,14 +351,6 @@ namespace Marathon_Skills.Forms
             this.label20.Tag = "";
             this.label20.Text = "Страна:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(377, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 191);
-            this.pictureBox1.TabIndex = 102;
-            this.pictureBox1.TabStop = false;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -482,37 +446,83 @@ namespace Marathon_Skills.Forms
             this.label28.Text = "Вышел на старт";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
+            // roundedButton1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(721, 99);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 57);
-            this.pictureBox2.TabIndex = 128;
-            this.pictureBox2.TabStop = false;
+            this.roundedButton1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton1.Location = new System.Drawing.Point(301, 352);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(165, 42);
+            this.roundedButton1.TabIndex = 101;
+            this.roundedButton1.Text = "Печать бейджа";
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
-            // pictureBox3
+            // roundedButton3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(721, 162);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 57);
-            this.pictureBox3.TabIndex = 129;
-            this.pictureBox3.TabStop = false;
+            this.roundedButton3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton3.Location = new System.Drawing.Point(12, 352);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(189, 42);
+            this.roundedButton3.TabIndex = 100;
+            this.roundedButton3.Text = "Показ сертификата";
+            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
-            // pictureBox4
+            // roundedButton2
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(721, 225);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 57);
-            this.pictureBox4.TabIndex = 130;
-            this.pictureBox4.TabStop = false;
+            this.roundedButton2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roundedButton2.Location = new System.Drawing.Point(599, 352);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(189, 42);
+            this.roundedButton2.TabIndex = 99;
+            this.roundedButton2.Text = "Редактирование профиля";
+            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Location = new System.Drawing.Point(721, 288);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(67, 57);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 131;
             this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(721, 225);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(67, 57);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 130;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(721, 162);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(67, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 129;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(721, 99);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 128;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(377, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 191);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 102;
+            this.pictureBox1.TabStop = false;
             // 
             // ManageARunnerForm
             // 
@@ -565,11 +575,11 @@ namespace Marathon_Skills.Forms
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
