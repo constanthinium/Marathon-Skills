@@ -26,7 +26,7 @@ InventoryForm2 - 2.9 (36)				-
 //
 // C3
 //
-InteractiveMapForm - 3.1 (12)			-
+InteractiveMapForm - 3.1 (12)			+
 ManageChariForm - 3.2 (26)				+
 AddEditCharityForm - 3.3 (27)			-
 VoluntererManagementForm - 3.4 (28)		+

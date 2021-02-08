@@ -472,6 +472,13 @@
     <Content Include="Images\wwsm-rescue-logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\map-icon-toilets.png" />
+    <None Include="Resources\map-icon-medical.png" />
+    <None Include="Resources\map-icon-energy-bars.png" />
+    <None Include="Resources\map-icon-drinks.png" />
+    <None Include="Resources\map-icon-information.png" />
+    <None Include="Resources\map-icon-start.png" />
+    <None Include="Resources\marathon-skills-2016-marathon-map.jpg" />
     <None Include="Resources\bmi-obese-icon.png" />
     <None Include="Resources\bmi-overweight-icon.png" />
     <None Include="Resources\bmi-underweight-icon.png" />

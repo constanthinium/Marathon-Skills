@@ -191,7 +191,7 @@ namespace Marathon_Skills.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(62, 309);
+            this.label6.Location = new System.Drawing.Point(62, 318);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(349, 66);
             this.label6.TabIndex = 92;
