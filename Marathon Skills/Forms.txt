@@ -14,7 +14,7 @@ RegisterAsARunnerForm - 1.16 (2)		+
 //
 // C2
 //
-RegisterAsARunnerForm2 - 2.1 (4)		- фото пользователя некорректно записывается
+RegisterAsARunnerForm2 - 2.1 (4)		+
 RegisterForAnEventForm - 2.2 (5)		+
 RunnerConfirmForm - 2.3 (8)				+
 EditRunnerProfileForm - 2.4 (16)		+
@@ -28,7 +28,7 @@ InventoryForm2 - 2.9 (36)				-
 //
 InteractiveMapForm - 3.1 (12)			+
 ManageChariForm - 3.2 (26)				+
-AddEditCharityForm - 3.3 (27)			-
+AddEditCharityForm - 3.3 (27)			+
 VoluntererManagementForm - 3.4 (28)		+
 ImportVolunteersForm - 3.5 (29)			-
 MySponsorshipForm - 3.6 (18)			-
@@ -43,7 +43,7 @@ BMRCalculatorForm - 4.7 (34)			+ доделать кнопку информац�
 //
 // C5
 //
-ManageARunnerForm - 5.3 (23)			-
+ManageARunnerForm - 5.3 (23)			+
 EditRunnerProfileForm2 - 5.4 (24)		-
 CertificatePreviewForm - 5.5 (25)		-
 UserManagementForm - 5.6 (30)			+
